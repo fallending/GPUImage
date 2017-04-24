@@ -1,6 +1,12 @@
 # GPUImage #
 
+## openGLES Documentation
+1. [OpenGLES](http://www.jianshu.com/nb/2135411)
 
+## GPUImage Documentation
+1. [GPUImage详细解析](http://www.jianshu.com/p/7a58a7a61f4c)
+2. [GPUImage详细解析（二）](http://www.jianshu.com/p/1eea8bf8451e)
+3. [GPUImage详细解析（三）- 实时美颜滤镜](http://www.jianshu.com/p/2ce9b63ecfef)
 
 ## [关于开源框架GPUImage 的简单说明](http://blog.csdn.net/lu_ca/article/details/47859955)
 
