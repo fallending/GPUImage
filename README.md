@@ -4,9 +4,20 @@
 1. [OpenGLES](http://www.jianshu.com/nb/2135411)
 
 ## GPUImage Documentation
+
 1. [GPUImage详细解析](http://www.jianshu.com/p/7a58a7a61f4c)
 2. [GPUImage详细解析（二）](http://www.jianshu.com/p/1eea8bf8451e)
 3. [GPUImage详细解析（三）- 实时美颜滤镜](http://www.jianshu.com/p/2ce9b63ecfef)
+
+## 美颜算法
+
+1. [OpenCV实时美颜摄像并生成H264视频流](http://blog.csdn.net/zhangqipu000/article/details/52210391)
+2. [肤色检测](http://blog.csdn.net/yangtrees/article/details/8269984)
+3. [人像优化](http://blog.csdn.net/u011630458/article/details/46275469)
+4. [肤色检测](http://blog.csdn.net/wj080211140/article/details/23384927)
+5. [改变对比度](http://blog.csdn.net/ubunfans/article/details/24373811)
+
+6. [YUCIHighPassSkinSmoothing](https://github.com/YuAo/YUCIHighPassSkinSmoothing)
 
 ## [关于开源框架GPUImage 的简单说明](http://blog.csdn.net/lu_ca/article/details/47859955)
 
