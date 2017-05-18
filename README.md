@@ -1,9 +1,9 @@
 # GPUImage #
 
-## openGLES Documentation
+## openGLES 文档
 1. [OpenGLES](http://www.jianshu.com/nb/2135411)
 
-## GPUImage Documentation
+## GPUImage 文档
 
 1. [GPUImage详细解析](http://www.jianshu.com/p/7a58a7a61f4c)
 2. [GPUImage详细解析（二）](http://www.jianshu.com/p/1eea8bf8451e)
@@ -19,7 +19,23 @@
 
 6. [YUCIHighPassSkinSmoothing](https://github.com/YuAo/YUCIHighPassSkinSmoothing)
 
-## [滤镜说明]()
+ [滤镜说明]()
+
+## 理论依据
+
+1. 高斯模糊（英语：Gaussian Blur）,也叫高斯平滑，是在Adobe Photoshop、GIMP以及Paint.NET等图像处理软件中广泛使用的处理效果，通常用它来减少图像噪声以及降低细节层次。
+
+[关于高斯滤波的一些理解](http://blog.csdn.net/lz0499/article/details/54015150)
+[高斯滤波器-这个我觉得讲的最好](http://blog.csdn.net/lonelyrains/article/details/46463987)
+
+2. [图像增强-中值滤波](http://www.cnblogs.com/BYTEMAN/archive/2012/07/21/2602181.html)
+
+3. [图像增强-图像锐化](http://www.cnblogs.com/BYTEMAN/archive/2012/07/21/2603021.html)
+
+4. [图像分割-阈值分割](http://www.cnblogs.com/BYTEMAN/archive/2012/07/22/2603572.html)
+
+5. [图像增强-选择式掩膜平滑](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2601570.html)
+6. [图像增强-3](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2601281.html),[图像增强-2](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2600625.html),[图像增强处理-1](http://www.cnblogs.com/BYTEMAN/archive/2012/07/18/2597375.html)
 
 ## 技术需要
 
