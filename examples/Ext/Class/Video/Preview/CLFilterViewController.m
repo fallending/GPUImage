@@ -65,10 +65,11 @@
     // 后台&前台通知
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(enterForegroundNotification) name:UIApplicationWillEnterForegroundNotification object:nil];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(resignActiveNotification) name:UIApplicationDidEnterBackgroundNotification object:nil];
+    
     [self creatFilterView];
 }
 
--(void)viewWillDisappear:(BOOL)animated{
+- (void)viewWillDisappear:(BOOL)animated {
     [super viewWillDisappear:animated];
     [[UIApplication sharedApplication] setStatusBarHidden:NO withAnimation:UIStatusBarAnimationNone];
     [self videoStop];
@@ -373,31 +374,12 @@
 
 // 保存至本地相册
 - (void)save:(NSURL*)url{
-    ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-    [library writeVideoAtPathToSavedPhotosAlbum:url
-                                completionBlock:^(NSURL *assetURL, NSError *error) {
-                                    if (error) {
-                                        NSLog(@"Save video fail:%@",error);
-                                    } else {
-                                        NSLog(@"Save video succeed.");
-                                        [self dissMissButton];
-                                    }
-                                }];
+    [self save:url toLibrary:^(NSError *error) {
+        [self dissMissButton];
+    }];
 }
 
 #pragma mark - 系统方向与Status隐藏
-- (BOOL)prefersStatusBarHidden{
-    // 已经不起作用了
-    return YES;
-}
-
-- (BOOL)shouldAutorotate{
-    return NO;
-}
-
-- (UIInterfaceOrientationMask)supportedInterfaceOrientations{
-    return UIInterfaceOrientationMaskPortrait;
-}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];

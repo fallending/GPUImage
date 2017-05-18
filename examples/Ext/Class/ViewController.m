@@ -43,8 +43,7 @@
             NSLog(@"导入出错");
             [picker popToRootViewControllerAnimated:YES];
         } else {
-            CLFilterViewController *filter = [[CLFilterViewController alloc]init];
-            //            FilterViewController *filter = [[FilterViewController alloc] init];
+            CLFilterViewController *filter = [[CLFilterViewController alloc] init];
             filter.videoUrl = [NSURL fileURLWithPath:videoPath];
             [picker dismissViewControllerAnimated:YES completion:^{
                 [self presentViewController:filter animated:YES completion:nil];
@@ -62,7 +61,10 @@
         HCPhotoEditViewController *editController = [[HCPhotoEditViewController alloc] init];
         editController.oriImage = image;
         editController.delegate = self;
-        [self presentViewController:editController animated:YES completion:nil];
+        
+        [picker dismissViewControllerAnimated:YES completion:^{
+            [self presentViewController:editController animated:YES completion:nil];
+        }];
     }
 }
 

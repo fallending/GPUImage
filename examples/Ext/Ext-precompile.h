@@ -10,6 +10,7 @@
 #import "MBProgressHUD.h"
 #import "NSString+date.h"
 #import "UIImage+color.h"
+#import "NSObject+Many.h"
 
 /* CustomFilter */
 #import "TBBlackWhiteFiter.h" // 黑白
