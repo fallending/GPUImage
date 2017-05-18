@@ -10,9 +10,11 @@
 #import "ViewController.h"
 #import "HCPhotoEditViewController.h"
 #import "CLFilterViewController.h"
+#import "OEPopVideoController.h"
+#import "Ext-precompile.h"
 #import "Ext-Swift.h"
 
-@interface ViewController ()<HCPhotoEditViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate>
+@interface ViewController ()<HCPhotoEditViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, OEPopVideoControllerDelegate>
 
 @end
 
@@ -32,6 +34,13 @@
     imagePicker.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
     imagePicker.mediaTypes =  [[NSArray alloc] initWithObjects:(NSString *)kUTTypeMovie, kUTTypeImage,nil];
     [self presentViewController:imagePicker animated:YES completion:nil];
+}
+
+- (IBAction)onRecord:(id)sender {
+    OEPopVideoController *videoController = [[OEPopVideoController alloc] init];
+    videoController.videoMaxTime = 4;
+    videoController.delegate = self;
+    [videoController presentPopupControllerAnimated:YES];
 }
 
 #pragma mark - UIImagePickerController Delegate
@@ -71,13 +80,22 @@
 
 #pragma mark - HCPhotoEditViewControllerDelegate
 
--(void)didClickFinishButtonWithEditController:(HCPhotoEditViewController *)controller newImage:(UIImage *)newImage {
+- (void)didClickFinishButtonWithEditController:(HCPhotoEditViewController *)controller newImage:(UIImage *)newImage {
     [controller dismissViewControllerAnimated:YES completion:nil];
 }
 
--(void)didClickCancelButtonWithEditController:(HCPhotoEditViewController *)controller
-{
+- (void)didClickCancelButtonWithEditController:(HCPhotoEditViewController *)controller {
     [controller dismissViewControllerAnimated:YES completion:nil];
+}
+
+#pragma mark - OEPopVideoControllerDelegate
+
+- (void)popVideoControllerDidSave:(NSString *)url{
+    [self save:[NSURL URLWithString:url] toLibrary:nil];
+}
+
+- (void)popVideoControllerWillOutputSampleBuffer:(CMSampleBufferRef)sampleBuffer {
+    
 }
 
 @end

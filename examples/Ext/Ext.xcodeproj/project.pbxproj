@@ -395,6 +395,12 @@
 		6ABB4EB41ECD4976007702E6 /* NSString+date.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EB11ECD4976007702E6 /* NSString+date.m */; };
 		6ABB4EB51ECD4976007702E6 /* UIImage+color.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EB31ECD4976007702E6 /* UIImage+color.m */; };
 		6ABB4EB81ECD4A15007702E6 /* NSObject+Many.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EB71ECD4A15007702E6 /* NSObject+Many.m */; };
+		6ABB4EC61ECD70F8007702E6 /* OEPopVideoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EBF1ECD70F8007702E6 /* OEPopVideoController.m */; };
+		6ABB4EC71ECD70F8007702E6 /* OEProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EC11ECD70F8007702E6 /* OEProgressView.m */; };
+		6ABB4EC81ECD70F8007702E6 /* OETabbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EC31ECD70F8007702E6 /* OETabbar.m */; };
+		6ABB4EC91ECD70F8007702E6 /* RecordButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 6ABB4EC51ECD70F8007702E6 /* RecordButton.m */; };
+		6ABB4ECC1ECD7103007702E6 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB4ECA1ECD7103007702E6 /* cancel.png */; };
+		6ABB4ECD1ECD7103007702E6 /* convert.png in Resources */ = {isa = PBXBuildFile; fileRef = 6ABB4ECB1ECD7103007702E6 /* convert.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -1037,6 +1043,16 @@
 		6ABB4EB31ECD4976007702E6 /* UIImage+color.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+color.m"; sourceTree = "<group>"; };
 		6ABB4EB61ECD4A15007702E6 /* NSObject+Many.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Many.h"; sourceTree = "<group>"; };
 		6ABB4EB71ECD4A15007702E6 /* NSObject+Many.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Many.m"; sourceTree = "<group>"; };
+		6ABB4EBE1ECD70F8007702E6 /* OEPopVideoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEPopVideoController.h; sourceTree = "<group>"; };
+		6ABB4EBF1ECD70F8007702E6 /* OEPopVideoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEPopVideoController.m; sourceTree = "<group>"; };
+		6ABB4EC01ECD70F8007702E6 /* OEProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OEProgressView.h; sourceTree = "<group>"; };
+		6ABB4EC11ECD70F8007702E6 /* OEProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OEProgressView.m; sourceTree = "<group>"; };
+		6ABB4EC21ECD70F8007702E6 /* OETabbar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OETabbar.h; sourceTree = "<group>"; };
+		6ABB4EC31ECD70F8007702E6 /* OETabbar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OETabbar.m; sourceTree = "<group>"; };
+		6ABB4EC41ECD70F8007702E6 /* RecordButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecordButton.h; sourceTree = "<group>"; };
+		6ABB4EC51ECD70F8007702E6 /* RecordButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecordButton.m; sourceTree = "<group>"; };
+		6ABB4ECA1ECD7103007702E6 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		6ABB4ECB1ECD7103007702E6 /* convert.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = convert.png; sourceTree = "<group>"; };
 		872D6D9C1E45D6B4008F345F /* Ext.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ext.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -1870,6 +1886,7 @@
 		6ABB4E5F1ECD496A007702E6 /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				6ABB4EBD1ECD70F8007702E6 /* Record */,
 				6ABB4E601ECD496A007702E6 /* Filter */,
 				6ABB4E731ECD496A007702E6 /* Image */,
 				6ABB4E7C1ECD496A007702E6 /* PostProcess */,
@@ -1907,6 +1924,8 @@
 		6ABB4E731ECD496A007702E6 /* Image */ = {
 			isa = PBXGroup;
 			children = (
+				6ABB4ECA1ECD7103007702E6 /* cancel.png */,
+				6ABB4ECB1ECD7103007702E6 /* convert.png */,
 				6ABB4E741ECD496A007702E6 /* filter_0@2x.png */,
 				6ABB4E751ECD496A007702E6 /* filter_back@2x.png */,
 				6ABB4E761ECD496A007702E6 /* filter_box@2x.png */,
@@ -1955,6 +1974,21 @@
 				6ABB4E911ECD496A007702E6 /* CLMBProgress.m */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		6ABB4EBD1ECD70F8007702E6 /* Record */ = {
+			isa = PBXGroup;
+			children = (
+				6ABB4EBE1ECD70F8007702E6 /* OEPopVideoController.h */,
+				6ABB4EBF1ECD70F8007702E6 /* OEPopVideoController.m */,
+				6ABB4EC01ECD70F8007702E6 /* OEProgressView.h */,
+				6ABB4EC11ECD70F8007702E6 /* OEProgressView.m */,
+				6ABB4EC21ECD70F8007702E6 /* OETabbar.h */,
+				6ABB4EC31ECD70F8007702E6 /* OETabbar.m */,
+				6ABB4EC41ECD70F8007702E6 /* RecordButton.h */,
+				6ABB4EC51ECD70F8007702E6 /* RecordButton.m */,
+			);
+			path = Record;
 			sourceTree = "<group>";
 		};
 		872D6D931E45D6B4008F345F = {
@@ -2052,6 +2086,8 @@
 				6ABB4A781ECC5B4F007702E6 /* halo_22.jpg in Resources */,
 				6ABB4EA81ECD496A007702E6 /* filterImage.png in Resources */,
 				6ABB4AA01ECC5B4F007702E6 /* softLight.png in Resources */,
+				6ABB4ECD1ECD7103007702E6 /* convert.png in Resources */,
+				6ABB4ECC1ECD7103007702E6 /* cancel.png in Resources */,
 				6ABB4A601ECC5B4F007702E6 /* Main.storyboard in Resources */,
 				6ABB4E961ECD496A007702E6 /* lookup_soft_elegance_2.png in Resources */,
 				6ABB4E9E1ECD496A007702E6 /* filter_0@2x.png in Resources */,
@@ -2169,6 +2205,7 @@
 				6ABB4CC91ECC5B6C007702E6 /* GPUImageKuwaharaRadius3Filter.m in Sources */,
 				6ABB4D671ECC9443007702E6 /* HCPhotoEditFuzzyMaskView.m in Sources */,
 				6ABB4D641ECC9443007702E6 /* HCPhotoEditCutItemView.m in Sources */,
+				6ABB4EC81ECD70F8007702E6 /* OETabbar.m in Sources */,
 				6ABB4DF71ECC9CAD007702E6 /* MASLayoutConstraint.m in Sources */,
 				6ABB4D6A1ECC9443007702E6 /* HCPhotoEditSpecialEffectsItemView.m in Sources */,
 				6ABB4CAA1ECC5B6C007702E6 /* GPUImageDissolveBlendFilter.m in Sources */,
@@ -2354,6 +2391,7 @@
 				6ABB4DA91ECC9749007702E6 /* CameraView.swift in Sources */,
 				6ABB4D2A1ECC5B6C007702E6 /* GPUImageStillCamera.m in Sources */,
 				6ABB4D201ECC5B6C007702E6 /* GPUImageLuminosity.m in Sources */,
+				6ABB4EC91ECD70F8007702E6 /* RecordButton.m in Sources */,
 				6ABB4CB21ECC5B6C007702E6 /* GPUImageFilterPipeline.m in Sources */,
 				6ABB4CE51ECC5B6C007702E6 /* GPUImagePoissonBlendFilter.m in Sources */,
 				6ABB4CF01ECC5B6C007702E6 /* GPUImageSaturationFilter.m in Sources */,
@@ -2366,6 +2404,7 @@
 				6ABB4DBC1ECC9749007702E6 /* UIImageView+Extensions.swift in Sources */,
 				6ABB4C971ECC5B6C007702E6 /* GPUImageClosingFilter.m in Sources */,
 				6ABB4CE61ECC5B6C007702E6 /* GPUImagePolarPixellateFilter.m in Sources */,
+				6ABB4EC61ECD70F8007702E6 /* OEPopVideoController.m in Sources */,
 				6ABB4DFC1ECC9CAD007702E6 /* View+MASAdditions.m in Sources */,
 				6ABB4CCB1ECC5B6C007702E6 /* GPUImageLaplacianFilter.m in Sources */,
 				6ABB4D0A1ECC5B6C007702E6 /* GPUImageTwoInputFilter.m in Sources */,
@@ -2411,6 +2450,7 @@
 				6ABB4D011ECC5B6C007702E6 /* GPUImageThreeInputFilter.m in Sources */,
 				6ABB4CD71ECC5B6C007702E6 /* GPUImageMissEtikateFilter.m in Sources */,
 				6ABB4CDE1ECC5B6C007702E6 /* GPUImageNormalBlendFilter.m in Sources */,
+				6ABB4EC71ECD70F8007702E6 /* OEProgressView.m in Sources */,
 				6ABB4CC11ECC5B6C007702E6 /* GPUImageHistogramEqualizationFilter.m in Sources */,
 				6ABB4DB11ECC9749007702E6 /* ImageCell.swift in Sources */,
 				6ABB4C881ECC5B6C007702E6 /* GPUImage3x3ConvolutionFilter.m in Sources */,
