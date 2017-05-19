@@ -1,0 +1,811 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4A02C7971AE4A77C000AD5B5 /* FZLanTingHeiS_R_GB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C7921AE4A77C000AD5B5 /* FZLanTingHeiS_R_GB.ttf */; };
+		4A02C7991AE4A77C000AD5B5 /* FZQiTi_S14T.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C7941AE4A77C000AD5B5 /* FZQiTi_S14T.ttf */; };
+		4A02C79D1AE4CA40000AD5B5 /* FZDaBiaoSong_B06S.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4A02C79C1AE4C9A3000AD5B5 /* FZDaBiaoSong_B06S.ttf */; };
+		4A02C7A01AE5D9E5000AD5B5 /* ImageAutoFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C79F1AE5D9E5000AD5B5 /* ImageAutoFilterViewController.m */; };
+		4A02C7A41AE5DB4F000AD5B5 /* BSAutoImageFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7A31AE5DB4F000AD5B5 /* BSAutoImageFilter.m */; };
+		4A02C7A71AE5F0A0000AD5B5 /* ImageAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7A61AE5F0A0000AD5B5 /* ImageAnalyzer.m */; };
+		4A02C7AA1AE729EF000AD5B5 /* AssortDynamicTip.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7A91AE729EF000AD5B5 /* AssortDynamicTip.m */; };
+		4A02C7AD1AE73A3C000AD5B5 /* UIColorEX.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7AC1AE73A3C000AD5B5 /* UIColorEX.m */; };
+		4A02C7B31AE74D40000AD5B5 /* DynamicTipViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7B21AE74D40000AD5B5 /* DynamicTipViewController.m */; };
+		4A02C7B91AE76767000AD5B5 /* SQLiteManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7B61AE76767000AD5B5 /* SQLiteManager.m */; };
+		4A02C7BA1AE76767000AD5B5 /* SQLiteMigrater.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7B81AE76767000AD5B5 /* SQLiteMigrater.m */; };
+		4A02C7BD1AE76783000AD5B5 /* AssortLocalStorageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7BC1AE76783000AD5B5 /* AssortLocalStorageManager.m */; };
+		4A02C7C01AE767E7000AD5B5 /* AssortLocalStorageMigrater.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A02C7BF1AE767E7000AD5B5 /* AssortLocalStorageMigrater.m */; };
+		4A02C7C21AE76CF0000AD5B5 /* libsqlite3.0.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A02C7C11AE76CF0000AD5B5 /* libsqlite3.0.dylib */; };
+		4A04AA631AE499BD00A115E4 /* AssortTipRound.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A04AA621AE499BD00A115E4 /* AssortTipRound.m */; };
+		4A1D92971ACCE27B00645FC5 /* EXIFReader.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D92961ACCE27B00645FC5 /* EXIFReader.m */; };
+		4A1D92991ACCE91500645FC5 /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D92981ACCE91500645FC5 /* AssetsLibrary.framework */; };
+		4A1D929B1ACCE91F00645FC5 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A1D929A1ACCE91F00645FC5 /* ImageIO.framework */; };
+		4A1D929E1ACE6E5300645FC5 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A1D929D1ACE6E5300645FC5 /* MainViewController.m */; };
+		4A3B28551B034B9E00E5B619 /* FunTipsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3B28541B034B9E00E5B619 /* FunTipsViewController.m */; };
+		4A3B28591B034D0A00E5B619 /* FunTipCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3B28581B034D0A00E5B619 /* FunTipCollectionView.m */; };
+		4A3B285C1B043E4D00E5B619 /* FunTipCollectionViewMainCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3B285B1B043E4D00E5B619 /* FunTipCollectionViewMainCell.m */; };
+		4A3B285F1B043E6800E5B619 /* FunTipCollectionViewChildCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3B285E1B043E6800E5B619 /* FunTipCollectionViewChildCell.m */; };
+		4A3B28621B047D2E00E5B619 /* FunTipDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A3B28611B047D2E00E5B619 /* FunTipDataManager.m */; };
+		4A53EE601AD76A21000AABC6 /* SPGripViewBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A53EE5C1AD76A21000AABC6 /* SPGripViewBorderView.m */; };
+		4A53EE621AD76A21000AABC6 /* ZDStickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A53EE5F1AD76A21000AABC6 /* ZDStickerView.m */; };
+		4A6D00A31ACB9D9900D0BA86 /* UIView+LayoutMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D00A21ACB9D9900D0BA86 /* UIView+LayoutMethods.m */; };
+		4A6D00A61ACBCA0700D0BA86 /* MultiFilterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6D00A51ACBCA0700D0BA86 /* MultiFilterViewController.m */; };
+		4A6E0C4C1ADB7CF4005171B7 /* BSAssortSelectImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E0C4B1ADB7CF4005171B7 /* BSAssortSelectImageViewController.m */; };
+		4A6E0C501ADB7E78005171B7 /* BSAssortTakeImageButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E0C4F1ADB7E78005171B7 /* BSAssortTakeImageButton.m */; };
+		4A6E0C531ADB97DC005171B7 /* ImageCanvasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E0C521ADB97DC005171B7 /* ImageCanvasViewController.m */; };
+		4A6E0C571ADBAC45005171B7 /* BSAssortCanvasView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A6E0C561ADBAC45005171B7 /* BSAssortCanvasView.m */; };
+		4A95185C1AE09D6300920CC7 /* AssortTipFashionBaby.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A95185B1AE09D6300920CC7 /* AssortTipFashionBaby.m */; };
+		4A95185F1AE0C41A00920CC7 /* AssortTipNanRenZhuang.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A95185E1AE0C41A00920CC7 /* AssortTipNanRenZhuang.m */; };
+		4AA0ED341ADE01C4006DB4D5 /* AssortTipsMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED331ADE01C4006DB4D5 /* AssortTipsMainViewController.m */; };
+		4AA0ED371ADE02B0006DB4D5 /* AssortTipsFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED361ADE02B0006DB4D5 /* AssortTipsFactory.m */; };
+		4AA0ED3A1ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED391ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.m */; };
+		4AA0ED3E1ADE30CC006DB4D5 /* AssortTipKtv.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED3D1ADE30CC006DB4D5 /* AssortTipKtv.m */; };
+		4AA0ED411ADE518B006DB4D5 /* AssortTipMagazine.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED401ADE518B006DB4D5 /* AssortTipMagazine.m */; };
+		4AA0ED441ADF5451006DB4D5 /* AssortTipNewsPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED431ADF5451006DB4D5 /* AssortTipNewsPerson.m */; };
+		4AA0ED471ADF60D9006DB4D5 /* AssortTipNewsBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED461ADF60D9006DB4D5 /* AssortTipNewsBar.m */; };
+		4AA0ED4A1ADF7F96006DB4D5 /* AssortTipTimes.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AA0ED491ADF7F96006DB4D5 /* AssortTipTimes.m */; };
+		4AB5E7921AD60DAF00A5CA51 /* ImageSeperaterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5E7911AD60DAF00A5CA51 /* ImageSeperaterViewController.m */; };
+		4AB5E7A21AD620E400A5CA51 /* FilterTuneViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5E7A11AD620E400A5CA51 /* FilterTuneViewController.m */; };
+		4AB5E7A51AD62C3000A5CA51 /* TunePaneView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5E7A41AD62C3000A5CA51 /* TunePaneView.m */; };
+		4AB5E7B21AD66AD300A5CA51 /* MZCroppableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5E7AF1AD66AD300A5CA51 /* MZCroppableView.m */; };
+		4AB5E7B31AD66AD300A5CA51 /* UIBezierPath-Points.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AB5E7B11AD66AD300A5CA51 /* UIBezierPath-Points.m */; };
+		4AE45F391AE8A8F800EA7A5B /* NSString+MD5Extends.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45F381AE8A8F800EA7A5B /* NSString+MD5Extends.m */; };
+		4AE45F3C1AE8AB0900EA7A5B /* AIFFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AE45F3B1AE8AB0900EA7A5B /* AIFFileManager.m */; };
+		4AEEEE6C1ADC9E3B00831B6D /* AssortMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEEE6B1ADC9E3B00831B6D /* AssortMainViewController.m */; };
+		4AEEEE6F1ADCA5D100831B6D /* AssortStoreViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEEE6E1ADCA5D100831B6D /* AssortStoreViewController.m */; };
+		4AEEEE721ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEEE711ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.m */; };
+		4AEEEE751ADCBD5100831B6D /* AssortCropImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AEEEE741ADCBD5100831B6D /* AssortCropImageViewController.m */; };
+		4AF2550A1ACB7EF500480BE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF255091ACB7EF500480BE7 /* main.m */; };
+		4AF2550D1ACB7EF500480BE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4AF2550C1ACB7EF500480BE7 /* AppDelegate.m */; };
+		4AF255131ACB7EF500480BE7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4AF255111ACB7EF500480BE7 /* Main.storyboard */; };
+		4AF255151ACB7EF500480BE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4AF255141ACB7EF500480BE7 /* Images.xcassets */; };
+		4AF255181ACB7EF500480BE7 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4AF255161ACB7EF500480BE7 /* LaunchScreen.xib */; };
+		754BF8FEA1D44B5E85C8977E /* libPods-GPUImageDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F50F634435D401B818EE86A /* libPods-GPUImageDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		11E49434D90BBD617F94354C /* Pods-GPUImageDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo.release.xcconfig"; sourceTree = "<group>"; };
+		4A02C7921AE4A77C000AD5B5 /* FZLanTingHeiS_R_GB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZLanTingHeiS_R_GB.ttf; sourceTree = "<group>"; };
+		4A02C7941AE4A77C000AD5B5 /* FZQiTi_S14T.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZQiTi_S14T.ttf; sourceTree = "<group>"; };
+		4A02C79C1AE4C9A3000AD5B5 /* FZDaBiaoSong_B06S.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = FZDaBiaoSong_B06S.ttf; sourceTree = "<group>"; };
+		4A02C79E1AE5D9E5000AD5B5 /* ImageAutoFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAutoFilterViewController.h; sourceTree = "<group>"; };
+		4A02C79F1AE5D9E5000AD5B5 /* ImageAutoFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAutoFilterViewController.m; sourceTree = "<group>"; };
+		4A02C7A21AE5DB4F000AD5B5 /* BSAutoImageFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAutoImageFilter.h; sourceTree = "<group>"; };
+		4A02C7A31AE5DB4F000AD5B5 /* BSAutoImageFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAutoImageFilter.m; sourceTree = "<group>"; };
+		4A02C7A51AE5F0A0000AD5B5 /* ImageAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageAnalyzer.h; sourceTree = "<group>"; };
+		4A02C7A61AE5F0A0000AD5B5 /* ImageAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageAnalyzer.m; sourceTree = "<group>"; };
+		4A02C7A81AE729EF000AD5B5 /* AssortDynamicTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortDynamicTip.h; sourceTree = "<group>"; };
+		4A02C7A91AE729EF000AD5B5 /* AssortDynamicTip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortDynamicTip.m; sourceTree = "<group>"; };
+		4A02C7AB1AE73A3C000AD5B5 /* UIColorEX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIColorEX.h; sourceTree = "<group>"; };
+		4A02C7AC1AE73A3C000AD5B5 /* UIColorEX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIColorEX.m; sourceTree = "<group>"; };
+		4A02C7B11AE74D40000AD5B5 /* DynamicTipViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DynamicTipViewController.h; sourceTree = "<group>"; };
+		4A02C7B21AE74D40000AD5B5 /* DynamicTipViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DynamicTipViewController.m; sourceTree = "<group>"; };
+		4A02C7B51AE76767000AD5B5 /* SQLiteManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteManager.h; sourceTree = "<group>"; };
+		4A02C7B61AE76767000AD5B5 /* SQLiteManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteManager.m; sourceTree = "<group>"; };
+		4A02C7B71AE76767000AD5B5 /* SQLiteMigrater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SQLiteMigrater.h; sourceTree = "<group>"; };
+		4A02C7B81AE76767000AD5B5 /* SQLiteMigrater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SQLiteMigrater.m; sourceTree = "<group>"; };
+		4A02C7BB1AE76783000AD5B5 /* AssortLocalStorageManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortLocalStorageManager.h; sourceTree = "<group>"; };
+		4A02C7BC1AE76783000AD5B5 /* AssortLocalStorageManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortLocalStorageManager.m; sourceTree = "<group>"; };
+		4A02C7BE1AE767E7000AD5B5 /* AssortLocalStorageMigrater.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortLocalStorageMigrater.h; sourceTree = "<group>"; };
+		4A02C7BF1AE767E7000AD5B5 /* AssortLocalStorageMigrater.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortLocalStorageMigrater.m; sourceTree = "<group>"; };
+		4A02C7C11AE76CF0000AD5B5 /* libsqlite3.0.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.0.dylib; path = usr/lib/libsqlite3.0.dylib; sourceTree = SDKROOT; };
+		4A04AA611AE499BD00A115E4 /* AssortTipRound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipRound.h; sourceTree = "<group>"; };
+		4A04AA621AE499BD00A115E4 /* AssortTipRound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipRound.m; sourceTree = "<group>"; };
+		4A1D92951ACCE27B00645FC5 /* EXIFReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EXIFReader.h; sourceTree = "<group>"; };
+		4A1D92961ACCE27B00645FC5 /* EXIFReader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EXIFReader.m; sourceTree = "<group>"; };
+		4A1D92981ACCE91500645FC5 /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4A1D929A1ACCE91F00645FC5 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		4A1D929C1ACE6E5300645FC5 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4A1D929D1ACE6E5300645FC5 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4A3B28531B034B9E00E5B619 /* FunTipsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunTipsViewController.h; sourceTree = "<group>"; };
+		4A3B28541B034B9E00E5B619 /* FunTipsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunTipsViewController.m; sourceTree = "<group>"; };
+		4A3B28571B034D0A00E5B619 /* FunTipCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunTipCollectionView.h; sourceTree = "<group>"; };
+		4A3B28581B034D0A00E5B619 /* FunTipCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunTipCollectionView.m; sourceTree = "<group>"; };
+		4A3B285A1B043E4D00E5B619 /* FunTipCollectionViewMainCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunTipCollectionViewMainCell.h; sourceTree = "<group>"; };
+		4A3B285B1B043E4D00E5B619 /* FunTipCollectionViewMainCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunTipCollectionViewMainCell.m; sourceTree = "<group>"; };
+		4A3B285D1B043E6800E5B619 /* FunTipCollectionViewChildCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunTipCollectionViewChildCell.h; sourceTree = "<group>"; };
+		4A3B285E1B043E6800E5B619 /* FunTipCollectionViewChildCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunTipCollectionViewChildCell.m; sourceTree = "<group>"; };
+		4A3B28601B047D2E00E5B619 /* FunTipDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FunTipDataManager.h; sourceTree = "<group>"; };
+		4A3B28611B047D2E00E5B619 /* FunTipDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FunTipDataManager.m; sourceTree = "<group>"; };
+		4A53EE5B1AD76A21000AABC6 /* SPGripViewBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPGripViewBorderView.h; sourceTree = "<group>"; };
+		4A53EE5C1AD76A21000AABC6 /* SPGripViewBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SPGripViewBorderView.m; sourceTree = "<group>"; };
+		4A53EE5E1AD76A21000AABC6 /* ZDStickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDStickerView.h; sourceTree = "<group>"; };
+		4A53EE5F1AD76A21000AABC6 /* ZDStickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDStickerView.m; sourceTree = "<group>"; };
+		4A6D00A11ACB9D9900D0BA86 /* UIView+LayoutMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+LayoutMethods.h"; sourceTree = "<group>"; };
+		4A6D00A21ACB9D9900D0BA86 /* UIView+LayoutMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+LayoutMethods.m"; sourceTree = "<group>"; };
+		4A6D00A41ACBCA0700D0BA86 /* MultiFilterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MultiFilterViewController.h; sourceTree = "<group>"; };
+		4A6D00A51ACBCA0700D0BA86 /* MultiFilterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MultiFilterViewController.m; sourceTree = "<group>"; };
+		4A6E0C4A1ADB7CF4005171B7 /* BSAssortSelectImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssortSelectImageViewController.h; sourceTree = "<group>"; };
+		4A6E0C4B1ADB7CF4005171B7 /* BSAssortSelectImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssortSelectImageViewController.m; sourceTree = "<group>"; };
+		4A6E0C4E1ADB7E78005171B7 /* BSAssortTakeImageButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssortTakeImageButton.h; sourceTree = "<group>"; };
+		4A6E0C4F1ADB7E78005171B7 /* BSAssortTakeImageButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssortTakeImageButton.m; sourceTree = "<group>"; };
+		4A6E0C511ADB97DC005171B7 /* ImageCanvasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCanvasViewController.h; sourceTree = "<group>"; };
+		4A6E0C521ADB97DC005171B7 /* ImageCanvasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCanvasViewController.m; sourceTree = "<group>"; };
+		4A6E0C551ADBAC45005171B7 /* BSAssortCanvasView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BSAssortCanvasView.h; sourceTree = "<group>"; };
+		4A6E0C561ADBAC45005171B7 /* BSAssortCanvasView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BSAssortCanvasView.m; sourceTree = "<group>"; };
+		4A95185A1AE09D6300920CC7 /* AssortTipFashionBaby.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipFashionBaby.h; sourceTree = "<group>"; };
+		4A95185B1AE09D6300920CC7 /* AssortTipFashionBaby.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipFashionBaby.m; sourceTree = "<group>"; };
+		4A95185D1AE0C41A00920CC7 /* AssortTipNanRenZhuang.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipNanRenZhuang.h; sourceTree = "<group>"; };
+		4A95185E1AE0C41A00920CC7 /* AssortTipNanRenZhuang.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipNanRenZhuang.m; sourceTree = "<group>"; };
+		4AA0ED321ADE01C4006DB4D5 /* AssortTipsMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipsMainViewController.h; sourceTree = "<group>"; };
+		4AA0ED331ADE01C4006DB4D5 /* AssortTipsMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipsMainViewController.m; sourceTree = "<group>"; };
+		4AA0ED351ADE02B0006DB4D5 /* AssortTipsFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipsFactory.h; sourceTree = "<group>"; };
+		4AA0ED361ADE02B0006DB4D5 /* AssortTipsFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipsFactory.m; sourceTree = "<group>"; };
+		4AA0ED381ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipsCollectionViewCell.h; sourceTree = "<group>"; };
+		4AA0ED391ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipsCollectionViewCell.m; sourceTree = "<group>"; };
+		4AA0ED3C1ADE30CC006DB4D5 /* AssortTipKtv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipKtv.h; sourceTree = "<group>"; };
+		4AA0ED3D1ADE30CC006DB4D5 /* AssortTipKtv.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipKtv.m; sourceTree = "<group>"; };
+		4AA0ED3F1ADE518B006DB4D5 /* AssortTipMagazine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipMagazine.h; sourceTree = "<group>"; };
+		4AA0ED401ADE518B006DB4D5 /* AssortTipMagazine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipMagazine.m; sourceTree = "<group>"; };
+		4AA0ED421ADF5451006DB4D5 /* AssortTipNewsPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipNewsPerson.h; sourceTree = "<group>"; };
+		4AA0ED431ADF5451006DB4D5 /* AssortTipNewsPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipNewsPerson.m; sourceTree = "<group>"; };
+		4AA0ED451ADF60D9006DB4D5 /* AssortTipNewsBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipNewsBar.h; sourceTree = "<group>"; };
+		4AA0ED461ADF60D9006DB4D5 /* AssortTipNewsBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipNewsBar.m; sourceTree = "<group>"; };
+		4AA0ED481ADF7F96006DB4D5 /* AssortTipTimes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortTipTimes.h; sourceTree = "<group>"; };
+		4AA0ED491ADF7F96006DB4D5 /* AssortTipTimes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortTipTimes.m; sourceTree = "<group>"; };
+		4AB5E7901AD60DAF00A5CA51 /* ImageSeperaterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageSeperaterViewController.h; sourceTree = "<group>"; };
+		4AB5E7911AD60DAF00A5CA51 /* ImageSeperaterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageSeperaterViewController.m; sourceTree = "<group>"; };
+		4AB5E7A01AD620E400A5CA51 /* FilterTuneViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTuneViewController.h; sourceTree = "<group>"; };
+		4AB5E7A11AD620E400A5CA51 /* FilterTuneViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FilterTuneViewController.m; sourceTree = "<group>"; };
+		4AB5E7A31AD62C3000A5CA51 /* TunePaneView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TunePaneView.h; sourceTree = "<group>"; };
+		4AB5E7A41AD62C3000A5CA51 /* TunePaneView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TunePaneView.m; sourceTree = "<group>"; };
+		4AB5E7AE1AD66AD300A5CA51 /* MZCroppableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MZCroppableView.h; sourceTree = "<group>"; };
+		4AB5E7AF1AD66AD300A5CA51 /* MZCroppableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MZCroppableView.m; sourceTree = "<group>"; };
+		4AB5E7B01AD66AD300A5CA51 /* UIBezierPath-Points.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath-Points.h"; sourceTree = "<group>"; };
+		4AB5E7B11AD66AD300A5CA51 /* UIBezierPath-Points.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath-Points.m"; sourceTree = "<group>"; };
+		4AE45F371AE8A8F800EA7A5B /* NSString+MD5Extends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5Extends.h"; sourceTree = "<group>"; };
+		4AE45F381AE8A8F800EA7A5B /* NSString+MD5Extends.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5Extends.m"; sourceTree = "<group>"; };
+		4AE45F3A1AE8AB0900EA7A5B /* AIFFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AIFFileManager.h; sourceTree = "<group>"; };
+		4AE45F3B1AE8AB0900EA7A5B /* AIFFileManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AIFFileManager.m; sourceTree = "<group>"; };
+		4AEEEE6A1ADC9E3B00831B6D /* AssortMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortMainViewController.h; sourceTree = "<group>"; };
+		4AEEEE6B1ADC9E3B00831B6D /* AssortMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortMainViewController.m; sourceTree = "<group>"; };
+		4AEEEE6D1ADCA5D100831B6D /* AssortStoreViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortStoreViewController.h; sourceTree = "<group>"; };
+		4AEEEE6E1ADCA5D100831B6D /* AssortStoreViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortStoreViewController.m; sourceTree = "<group>"; };
+		4AEEEE701ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortStoreItemCollectionViewCell.h; sourceTree = "<group>"; };
+		4AEEEE711ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortStoreItemCollectionViewCell.m; sourceTree = "<group>"; };
+		4AEEEE731ADCBD5100831B6D /* AssortCropImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AssortCropImageViewController.h; sourceTree = "<group>"; };
+		4AEEEE741ADCBD5100831B6D /* AssortCropImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AssortCropImageViewController.m; sourceTree = "<group>"; };
+		4AF255041ACB7EF500480BE7 /* GPUImageDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GPUImageDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4AF255081ACB7EF500480BE7 /* GPUImageDemo-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GPUImageDemo-Info.plist"; sourceTree = "<group>"; };
+		4AF255091ACB7EF500480BE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4AF2550B1ACB7EF500480BE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4AF2550C1ACB7EF500480BE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4AF255121ACB7EF500480BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4AF255141ACB7EF500480BE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		4AF255171ACB7EF500480BE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		4AF255221ACB7EF500480BE7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4AF255231ACB7EF500480BE7 /* GPUImageDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GPUImageDemoTests.m; sourceTree = "<group>"; };
+		5F50F634435D401B818EE86A /* libPods-GPUImageDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GPUImageDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6AF385A43115BADA44D45932 /* Pods-GPUImageDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GPUImageDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4AF255011ACB7EF500480BE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A02C7C21AE76CF0000AD5B5 /* libsqlite3.0.dylib in Frameworks */,
+				4A1D929B1ACCE91F00645FC5 /* ImageIO.framework in Frameworks */,
+				4A1D92991ACCE91500645FC5 /* AssetsLibrary.framework in Frameworks */,
+				754BF8FEA1D44B5E85C8977E /* libPods-GPUImageDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		00691FF586C943CE8BE127A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C7C11AE76CF0000AD5B5 /* libsqlite3.0.dylib */,
+				4A1D929A1ACCE91F00645FC5 /* ImageIO.framework */,
+				4A1D92981ACCE91500645FC5 /* AssetsLibrary.framework */,
+				5F50F634435D401B818EE86A /* libPods-GPUImageDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4A02C7911AE4A77C000AD5B5 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C79C1AE4C9A3000AD5B5 /* FZDaBiaoSong_B06S.ttf */,
+				4A02C7921AE4A77C000AD5B5 /* FZLanTingHeiS_R_GB.ttf */,
+				4A02C7941AE4A77C000AD5B5 /* FZQiTi_S14T.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		4A02C7A11AE5DB3D000AD5B5 /* AutoImageFilter */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C7A51AE5F0A0000AD5B5 /* ImageAnalyzer.h */,
+				4A02C7A61AE5F0A0000AD5B5 /* ImageAnalyzer.m */,
+				4A02C7A21AE5DB4F000AD5B5 /* BSAutoImageFilter.h */,
+				4A02C7A31AE5DB4F000AD5B5 /* BSAutoImageFilter.m */,
+			);
+			path = AutoImageFilter;
+			sourceTree = "<group>";
+		};
+		4A02C7B41AE76767000AD5B5 /* LocalStorage */ = {
+			isa = PBXGroup;
+			children = (
+				4AE45F3A1AE8AB0900EA7A5B /* AIFFileManager.h */,
+				4AE45F3B1AE8AB0900EA7A5B /* AIFFileManager.m */,
+				4A02C7B51AE76767000AD5B5 /* SQLiteManager.h */,
+				4A02C7B61AE76767000AD5B5 /* SQLiteManager.m */,
+				4A02C7B71AE76767000AD5B5 /* SQLiteMigrater.h */,
+				4A02C7B81AE76767000AD5B5 /* SQLiteMigrater.m */,
+				4A02C7BE1AE767E7000AD5B5 /* AssortLocalStorageMigrater.h */,
+				4A02C7BF1AE767E7000AD5B5 /* AssortLocalStorageMigrater.m */,
+				4A02C7BB1AE76783000AD5B5 /* AssortLocalStorageManager.h */,
+				4A02C7BC1AE76783000AD5B5 /* AssortLocalStorageManager.m */,
+			);
+			path = LocalStorage;
+			sourceTree = "<group>";
+		};
+		4A3B28561B034C9900E5B619 /* FunTipCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				4A3B28571B034D0A00E5B619 /* FunTipCollectionView.h */,
+				4A3B28581B034D0A00E5B619 /* FunTipCollectionView.m */,
+				4A3B285A1B043E4D00E5B619 /* FunTipCollectionViewMainCell.h */,
+				4A3B285B1B043E4D00E5B619 /* FunTipCollectionViewMainCell.m */,
+				4A3B285D1B043E6800E5B619 /* FunTipCollectionViewChildCell.h */,
+				4A3B285E1B043E6800E5B619 /* FunTipCollectionViewChildCell.m */,
+				4A3B28601B047D2E00E5B619 /* FunTipDataManager.h */,
+				4A3B28611B047D2E00E5B619 /* FunTipDataManager.m */,
+			);
+			path = FunTipCollectionView;
+			sourceTree = "<group>";
+		};
+		4A53EE5A1AD76A21000AABC6 /* ZDStickerView */ = {
+			isa = PBXGroup;
+			children = (
+				4A53EE5B1AD76A21000AABC6 /* SPGripViewBorderView.h */,
+				4A53EE5C1AD76A21000AABC6 /* SPGripViewBorderView.m */,
+				4A53EE5E1AD76A21000AABC6 /* ZDStickerView.h */,
+				4A53EE5F1AD76A21000AABC6 /* ZDStickerView.m */,
+			);
+			path = ZDStickerView;
+			sourceTree = "<group>";
+		};
+		4A6E0C491ADB7CD1005171B7 /* AssortViews */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E0C4D1ADB7E3C005171B7 /* Views */,
+				4A6E0C4A1ADB7CF4005171B7 /* BSAssortSelectImageViewController.h */,
+				4A6E0C4B1ADB7CF4005171B7 /* BSAssortSelectImageViewController.m */,
+			);
+			path = AssortViews;
+			sourceTree = "<group>";
+		};
+		4A6E0C4D1ADB7E3C005171B7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E0C4E1ADB7E78005171B7 /* BSAssortTakeImageButton.h */,
+				4A6E0C4F1ADB7E78005171B7 /* BSAssortTakeImageButton.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4A6E0C541ADBAC28005171B7 /* BSAssortCanvas */ = {
+			isa = PBXGroup;
+			children = (
+				4A6E0C551ADBAC45005171B7 /* BSAssortCanvasView.h */,
+				4A6E0C561ADBAC45005171B7 /* BSAssortCanvasView.m */,
+			);
+			path = BSAssortCanvas;
+			sourceTree = "<group>";
+		};
+		4AA0ED311ADE0100006DB4D5 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C7B41AE76767000AD5B5 /* LocalStorage */,
+				4AA0ED3B1ADE0D64006DB4D5 /* Tips */,
+				4AA0ED321ADE01C4006DB4D5 /* AssortTipsMainViewController.h */,
+				4AA0ED331ADE01C4006DB4D5 /* AssortTipsMainViewController.m */,
+				4AA0ED351ADE02B0006DB4D5 /* AssortTipsFactory.h */,
+				4AA0ED361ADE02B0006DB4D5 /* AssortTipsFactory.m */,
+				4AA0ED381ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.h */,
+				4AA0ED391ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.m */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		4AA0ED3B1ADE0D64006DB4D5 /* Tips */ = {
+			isa = PBXGroup;
+			children = (
+				4AA0ED3C1ADE30CC006DB4D5 /* AssortTipKtv.h */,
+				4AA0ED3D1ADE30CC006DB4D5 /* AssortTipKtv.m */,
+				4AA0ED3F1ADE518B006DB4D5 /* AssortTipMagazine.h */,
+				4AA0ED401ADE518B006DB4D5 /* AssortTipMagazine.m */,
+				4AA0ED421ADF5451006DB4D5 /* AssortTipNewsPerson.h */,
+				4AA0ED431ADF5451006DB4D5 /* AssortTipNewsPerson.m */,
+				4AA0ED451ADF60D9006DB4D5 /* AssortTipNewsBar.h */,
+				4AA0ED461ADF60D9006DB4D5 /* AssortTipNewsBar.m */,
+				4AA0ED481ADF7F96006DB4D5 /* AssortTipTimes.h */,
+				4AA0ED491ADF7F96006DB4D5 /* AssortTipTimes.m */,
+				4A95185A1AE09D6300920CC7 /* AssortTipFashionBaby.h */,
+				4A95185B1AE09D6300920CC7 /* AssortTipFashionBaby.m */,
+				4A95185D1AE0C41A00920CC7 /* AssortTipNanRenZhuang.h */,
+				4A95185E1AE0C41A00920CC7 /* AssortTipNanRenZhuang.m */,
+				4A04AA611AE499BD00A115E4 /* AssortTipRound.h */,
+				4A04AA621AE499BD00A115E4 /* AssortTipRound.m */,
+				4A02C7A81AE729EF000AD5B5 /* AssortDynamicTip.h */,
+				4A02C7A91AE729EF000AD5B5 /* AssortDynamicTip.m */,
+			);
+			path = Tips;
+			sourceTree = "<group>";
+		};
+		4AB5E7AA1AD66AB500A5CA51 /* MZCroppableView */ = {
+			isa = PBXGroup;
+			children = (
+				4AB5E7AE1AD66AD300A5CA51 /* MZCroppableView.h */,
+				4AB5E7AF1AD66AD300A5CA51 /* MZCroppableView.m */,
+				4AB5E7B01AD66AD300A5CA51 /* UIBezierPath-Points.h */,
+				4AB5E7B11AD66AD300A5CA51 /* UIBezierPath-Points.m */,
+			);
+			path = MZCroppableView;
+			sourceTree = "<group>";
+		};
+		4AEEEE691ADC9E1F00831B6D /* Assort */ = {
+			isa = PBXGroup;
+			children = (
+				4AEEEE6A1ADC9E3B00831B6D /* AssortMainViewController.h */,
+				4AEEEE6B1ADC9E3B00831B6D /* AssortMainViewController.m */,
+				4AEEEE6D1ADCA5D100831B6D /* AssortStoreViewController.h */,
+				4AEEEE6E1ADCA5D100831B6D /* AssortStoreViewController.m */,
+				4AEEEE701ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.h */,
+				4AEEEE711ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.m */,
+				4AEEEE731ADCBD5100831B6D /* AssortCropImageViewController.h */,
+				4AEEEE741ADCBD5100831B6D /* AssortCropImageViewController.m */,
+			);
+			path = Assort;
+			sourceTree = "<group>";
+		};
+		4AF254FB1ACB7EF500480BE7 = {
+			isa = PBXGroup;
+			children = (
+				4AF255061ACB7EF500480BE7 /* GPUImageDemo */,
+				4AF255201ACB7EF500480BE7 /* GPUImageDemoTests */,
+				4AF255051ACB7EF500480BE7 /* Products */,
+				00691FF586C943CE8BE127A8 /* Frameworks */,
+				BE346FB8C222E72A2BD42D59 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		4AF255051ACB7EF500480BE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4AF255041ACB7EF500480BE7 /* GPUImageDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4AF255061ACB7EF500480BE7 /* GPUImageDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C7A11AE5DB3D000AD5B5 /* AutoImageFilter */,
+				4AA0ED311ADE0100006DB4D5 /* Tips */,
+				4AEEEE691ADC9E1F00831B6D /* Assort */,
+				4A6E0C541ADBAC28005171B7 /* BSAssortCanvas */,
+				4A6E0C491ADB7CD1005171B7 /* AssortViews */,
+				4A53EE5A1AD76A21000AABC6 /* ZDStickerView */,
+				4AB5E7AA1AD66AB500A5CA51 /* MZCroppableView */,
+				4A3B28561B034C9900E5B619 /* FunTipCollectionView */,
+				4A6D00A11ACB9D9900D0BA86 /* UIView+LayoutMethods.h */,
+				4A6D00A21ACB9D9900D0BA86 /* UIView+LayoutMethods.m */,
+				4AE45F371AE8A8F800EA7A5B /* NSString+MD5Extends.h */,
+				4AE45F381AE8A8F800EA7A5B /* NSString+MD5Extends.m */,
+				4AF2550B1ACB7EF500480BE7 /* AppDelegate.h */,
+				4AF2550C1ACB7EF500480BE7 /* AppDelegate.m */,
+				4A1D929C1ACE6E5300645FC5 /* MainViewController.h */,
+				4A1D929D1ACE6E5300645FC5 /* MainViewController.m */,
+				4A6D00A41ACBCA0700D0BA86 /* MultiFilterViewController.h */,
+				4A6D00A51ACBCA0700D0BA86 /* MultiFilterViewController.m */,
+				4AB5E7A01AD620E400A5CA51 /* FilterTuneViewController.h */,
+				4AB5E7A11AD620E400A5CA51 /* FilterTuneViewController.m */,
+				4AB5E7901AD60DAF00A5CA51 /* ImageSeperaterViewController.h */,
+				4AB5E7911AD60DAF00A5CA51 /* ImageSeperaterViewController.m */,
+				4A6E0C511ADB97DC005171B7 /* ImageCanvasViewController.h */,
+				4A6E0C521ADB97DC005171B7 /* ImageCanvasViewController.m */,
+				4A02C79E1AE5D9E5000AD5B5 /* ImageAutoFilterViewController.h */,
+				4A02C79F1AE5D9E5000AD5B5 /* ImageAutoFilterViewController.m */,
+				4A02C7B11AE74D40000AD5B5 /* DynamicTipViewController.h */,
+				4A02C7B21AE74D40000AD5B5 /* DynamicTipViewController.m */,
+				4A3B28531B034B9E00E5B619 /* FunTipsViewController.h */,
+				4A3B28541B034B9E00E5B619 /* FunTipsViewController.m */,
+				4A1D92951ACCE27B00645FC5 /* EXIFReader.h */,
+				4A1D92961ACCE27B00645FC5 /* EXIFReader.m */,
+				4AB5E7A31AD62C3000A5CA51 /* TunePaneView.h */,
+				4AB5E7A41AD62C3000A5CA51 /* TunePaneView.m */,
+				4A02C7AB1AE73A3C000AD5B5 /* UIColorEX.h */,
+				4A02C7AC1AE73A3C000AD5B5 /* UIColorEX.m */,
+				4AF255111ACB7EF500480BE7 /* Main.storyboard */,
+				4AF255141ACB7EF500480BE7 /* Images.xcassets */,
+				4AF255161ACB7EF500480BE7 /* LaunchScreen.xib */,
+				4AF255071ACB7EF500480BE7 /* Supporting Files */,
+			);
+			path = GPUImageDemo;
+			sourceTree = "<group>";
+		};
+		4AF255071ACB7EF500480BE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4A02C7911AE4A77C000AD5B5 /* Fonts */,
+				4AF255081ACB7EF500480BE7 /* GPUImageDemo-Info.plist */,
+				4AF255091ACB7EF500480BE7 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4AF255201ACB7EF500480BE7 /* GPUImageDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4AF255231ACB7EF500480BE7 /* GPUImageDemoTests.m */,
+				4AF255211ACB7EF500480BE7 /* Supporting Files */,
+			);
+			path = GPUImageDemoTests;
+			sourceTree = "<group>";
+		};
+		4AF255211ACB7EF500480BE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4AF255221ACB7EF500480BE7 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE346FB8C222E72A2BD42D59 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6AF385A43115BADA44D45932 /* Pods-GPUImageDemo.debug.xcconfig */,
+				11E49434D90BBD617F94354C /* Pods-GPUImageDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4AF255031ACB7EF500480BE7 /* GPUImageDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4AF255271ACB7EF500480BE7 /* Build configuration list for PBXNativeTarget "GPUImageDemo" */;
+			buildPhases = (
+				5050967867E84523AAABAF23 /* [CP] Check Pods Manifest.lock */,
+				4AF255001ACB7EF500480BE7 /* Sources */,
+				4AF255011ACB7EF500480BE7 /* Frameworks */,
+				4AF255021ACB7EF500480BE7 /* Resources */,
+				1BE28926A434448F9A5E2D4B /* [CP] Copy Pods Resources */,
+				B57D7C3584F32BBEC72BDAD3 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GPUImageDemo;
+			productName = GPUImageDemo;
+			productReference = 4AF255041ACB7EF500480BE7 /* GPUImageDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4AF254FC1ACB7EF500480BE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = alibaba;
+				TargetAttributes = {
+					4AF255031ACB7EF500480BE7 = {
+						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = Z5P6G49J44;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4AF254FF1ACB7EF500480BE7 /* Build configuration list for PBXProject "GPUImageDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4AF254FB1ACB7EF500480BE7;
+			productRefGroup = 4AF255051ACB7EF500480BE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4AF255031ACB7EF500480BE7 /* GPUImageDemo */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4AF255021ACB7EF500480BE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4AF255131ACB7EF500480BE7 /* Main.storyboard in Resources */,
+				4A02C7971AE4A77C000AD5B5 /* FZLanTingHeiS_R_GB.ttf in Resources */,
+				4A02C7991AE4A77C000AD5B5 /* FZQiTi_S14T.ttf in Resources */,
+				4A02C79D1AE4CA40000AD5B5 /* FZDaBiaoSong_B06S.ttf in Resources */,
+				4AF255181ACB7EF500480BE7 /* LaunchScreen.xib in Resources */,
+				4AF255151ACB7EF500480BE7 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1BE28926A434448F9A5E2D4B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5050967867E84523AAABAF23 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		B57D7C3584F32BBEC72BDAD3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GPUImageDemo/Pods-GPUImageDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4AF255001ACB7EF500480BE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4A02C7BA1AE76767000AD5B5 /* SQLiteMigrater.m in Sources */,
+				4A04AA631AE499BD00A115E4 /* AssortTipRound.m in Sources */,
+				4AB5E7A51AD62C3000A5CA51 /* TunePaneView.m in Sources */,
+				4AA0ED441ADF5451006DB4D5 /* AssortTipNewsPerson.m in Sources */,
+				4AEEEE721ADCA8C100831B6D /* AssortStoreItemCollectionViewCell.m in Sources */,
+				4A1D92971ACCE27B00645FC5 /* EXIFReader.m in Sources */,
+				4AEEEE6F1ADCA5D100831B6D /* AssortStoreViewController.m in Sources */,
+				4AB5E7A21AD620E400A5CA51 /* FilterTuneViewController.m in Sources */,
+				4AE45F391AE8A8F800EA7A5B /* NSString+MD5Extends.m in Sources */,
+				4A3B285C1B043E4D00E5B619 /* FunTipCollectionViewMainCell.m in Sources */,
+				4A02C7AA1AE729EF000AD5B5 /* AssortDynamicTip.m in Sources */,
+				4A3B285F1B043E6800E5B619 /* FunTipCollectionViewChildCell.m in Sources */,
+				4AA0ED341ADE01C4006DB4D5 /* AssortTipsMainViewController.m in Sources */,
+				4AB5E7921AD60DAF00A5CA51 /* ImageSeperaterViewController.m in Sources */,
+				4A3B28591B034D0A00E5B619 /* FunTipCollectionView.m in Sources */,
+				4A1D929E1ACE6E5300645FC5 /* MainViewController.m in Sources */,
+				4A02C7B91AE76767000AD5B5 /* SQLiteManager.m in Sources */,
+				4A95185F1AE0C41A00920CC7 /* AssortTipNanRenZhuang.m in Sources */,
+				4AA0ED471ADF60D9006DB4D5 /* AssortTipNewsBar.m in Sources */,
+				4AA0ED3E1ADE30CC006DB4D5 /* AssortTipKtv.m in Sources */,
+				4AB5E7B31AD66AD300A5CA51 /* UIBezierPath-Points.m in Sources */,
+				4AEEEE6C1ADC9E3B00831B6D /* AssortMainViewController.m in Sources */,
+				4AA0ED411ADE518B006DB4D5 /* AssortTipMagazine.m in Sources */,
+				4A6D00A31ACB9D9900D0BA86 /* UIView+LayoutMethods.m in Sources */,
+				4AB5E7B21AD66AD300A5CA51 /* MZCroppableView.m in Sources */,
+				4A02C7BD1AE76783000AD5B5 /* AssortLocalStorageManager.m in Sources */,
+				4A3B28551B034B9E00E5B619 /* FunTipsViewController.m in Sources */,
+				4A02C7A41AE5DB4F000AD5B5 /* BSAutoImageFilter.m in Sources */,
+				4A6E0C501ADB7E78005171B7 /* BSAssortTakeImageButton.m in Sources */,
+				4A02C7C01AE767E7000AD5B5 /* AssortLocalStorageMigrater.m in Sources */,
+				4A02C7A71AE5F0A0000AD5B5 /* ImageAnalyzer.m in Sources */,
+				4AA0ED4A1ADF7F96006DB4D5 /* AssortTipTimes.m in Sources */,
+				4A53EE601AD76A21000AABC6 /* SPGripViewBorderView.m in Sources */,
+				4A3B28621B047D2E00E5B619 /* FunTipDataManager.m in Sources */,
+				4A02C7AD1AE73A3C000AD5B5 /* UIColorEX.m in Sources */,
+				4A6E0C531ADB97DC005171B7 /* ImageCanvasViewController.m in Sources */,
+				4A02C7B31AE74D40000AD5B5 /* DynamicTipViewController.m in Sources */,
+				4A6E0C4C1ADB7CF4005171B7 /* BSAssortSelectImageViewController.m in Sources */,
+				4AA0ED3A1ADE02EB006DB4D5 /* AssortTipsCollectionViewCell.m in Sources */,
+				4A02C7A01AE5D9E5000AD5B5 /* ImageAutoFilterViewController.m in Sources */,
+				4AEEEE751ADCBD5100831B6D /* AssortCropImageViewController.m in Sources */,
+				4AA0ED371ADE02B0006DB4D5 /* AssortTipsFactory.m in Sources */,
+				4AF2550D1ACB7EF500480BE7 /* AppDelegate.m in Sources */,
+				4A6D00A61ACBCA0700D0BA86 /* MultiFilterViewController.m in Sources */,
+				4AE45F3C1AE8AB0900EA7A5B /* AIFFileManager.m in Sources */,
+				4A6E0C571ADBAC45005171B7 /* BSAssortCanvasView.m in Sources */,
+				4A53EE621AD76A21000AABC6 /* ZDStickerView.m in Sources */,
+				4A95185C1AE09D6300920CC7 /* AssortTipFashionBaby.m in Sources */,
+				4AF2550A1ACB7EF500480BE7 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		4AF255111ACB7EF500480BE7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF255121ACB7EF500480BE7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4AF255161ACB7EF500480BE7 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4AF255171ACB7EF500480BE7 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4AF255251ACB7EF500480BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Debug;
+		};
+		4AF255261ACB7EF500480BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				VALID_ARCHS = "arm64 armv7s armv7";
+			};
+			name = Release;
+		};
+		4AF255281ACB7EF500480BE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6AF385A43115BADA44D45932 /* Pods-GPUImageDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shi Jie Qin (FSAP8479L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = Z5P6G49J44;
+				INFOPLIST_FILE = "GPUImageDemo/GPUImageDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		4AF255291ACB7EF500480BE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 11E49434D90BBD617F94354C /* Pods-GPUImageDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Shi Jie Qin (FSAP8479L6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COMPRESS_PNG_FILES = NO;
+				DEVELOPMENT_TEAM = Z5P6G49J44;
+				INFOPLIST_FILE = "GPUImageDemo/GPUImageDemo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4AF254FF1ACB7EF500480BE7 /* Build configuration list for PBXProject "GPUImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF255251ACB7EF500480BE7 /* Debug */,
+				4AF255261ACB7EF500480BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4AF255271ACB7EF500480BE7 /* Build configuration list for PBXNativeTarget "GPUImageDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4AF255281ACB7EF500480BE7 /* Debug */,
+				4AF255291ACB7EF500480BE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4AF254FC1ACB7EF500480BE7 /* Project object */;
+}
