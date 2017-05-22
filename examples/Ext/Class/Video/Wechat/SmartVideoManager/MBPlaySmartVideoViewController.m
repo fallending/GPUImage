@@ -9,10 +9,9 @@
 #import "MBPlaySmartVideoViewController.h"
 #import "MBActionSheetView.h"
 #import "MBSmartVideoConverter.h"
+#import <AVFoundation/AVFoundation.h>
+#import "Ext-precompile.h"
 
-#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
-#define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
 @interface MBPlaySmartVideoViewController ()<
 MBActionSheetDelegate
 >
@@ -70,13 +69,13 @@ MBActionSheetDelegate
     [self.bottomView addSubview:self.durationLabel];
     [self.bottomView addSubview:self.functionButton];
     
-    CGFloat height = SCREEN_WIDTH * 0.747;
+    CGFloat height = kScreenWidth * 0.747;
 
     self.item = [AVPlayerItem playerItemWithURL:[self urlValidation:self.videoUrlString]];
     self.player = [[AVPlayer alloc] initWithPlayerItem:self.item];
     self.playerLayer = [AVPlayerLayer playerLayerWithPlayer: self.player];
     self.playerLayer.videoGravity = AVLayerVideoGravityResizeAspectFill;
-    self.playerLayer.frame = CGRectMake(0, 0, SCREEN_WIDTH, height);
+    self.playerLayer.frame = CGRectMake(0, 0, kScreenWidth, height);
     self.playerLayer.position = self.view.center;
     [self.videoView.layer addSublayer: self.playerLayer];
     [self.playerLayer setNeedsDisplay];
@@ -123,7 +122,7 @@ MBActionSheetDelegate
 #pragma mark - LazyInit
 - (UIView *)headerView {
     if (!_headerView) {
-        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, kHEADERVIEW_HEIGHT)];
+        _headerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kHEADERVIEW_HEIGHT)];
         _headerView.backgroundColor = [UIColor blackColor];
         
         self.backButton = [UIButton buttonWithType:UIButtonTypeSystem];
@@ -137,7 +136,7 @@ MBActionSheetDelegate
         [self.switchButton setTitle:@"「」" forState:UIControlStateNormal];
         [self.switchButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [self.switchButton addTarget:self action:@selector(switchAction) forControlEvents:UIControlEventTouchUpInside];
-        [self.switchButton setFrame:CGRectMake(SCREEN_WIDTH - kHEADERVIEW_HEIGHT, 0, kHEADERVIEW_HEIGHT, kHEADERVIEW_HEIGHT)];
+        [self.switchButton setFrame:CGRectMake(kScreenWidth - kHEADERVIEW_HEIGHT, 0, kHEADERVIEW_HEIGHT, kHEADERVIEW_HEIGHT)];
         [_headerView addSubview:self.switchButton];
     }
     return _headerView;
@@ -147,7 +146,7 @@ MBActionSheetDelegate
 - (UIView *)videoView {
     if (!_videoView)
     {
-        _videoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT - kBOTTOMVIEW_HEIGHT - kHEADERVIEW_HEIGHT)];
+        _videoView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight - kBOTTOMVIEW_HEIGHT - kHEADERVIEW_HEIGHT)];
         _videoView.backgroundColor = [UIColor blackColor];
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapAction)];
         [_videoView addGestureRecognizer:tap];
@@ -158,7 +157,7 @@ MBActionSheetDelegate
 - (UIView *)bottomView {
     if (!_bottomView)
     {
-        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, SCREEN_HEIGHT - kBOTTOMVIEW_HEIGHT, SCREEN_WIDTH, kBOTTOMVIEW_HEIGHT)];
+        _bottomView = [[UIView alloc] initWithFrame:CGRectMake(0, kScreenHeight - kBOTTOMVIEW_HEIGHT, kScreenWidth, kBOTTOMVIEW_HEIGHT)];
         _bottomView.backgroundColor = [UIColor blackColor];
         _bottomView.userInteractionEnabled = YES;
     }
@@ -199,7 +198,7 @@ MBActionSheetDelegate
         sliderImageView.layer.cornerRadius = 15/2;
         [sliderImageView setImage:[UIImage imageNamed:@"smartVideo_ThumbImage"]];
         
-        _slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH * 0.426, 10)];
+        _slider = [[UISlider alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth * 0.426, 10)];
         CGPoint sliderCenter = _slider.center;
         sliderCenter.x = self.bottomView.center.x;
         sliderCenter.y = 25;
@@ -246,7 +245,7 @@ MBActionSheetDelegate
     {
         _functionButton = [UIButton buttonWithType:UIButtonTypeCustom];
         [_functionButton setImage:[UIImage imageNamed:@"functionKeys"] forState:UIControlStateNormal];
-        [_functionButton setFrame:CGRectMake(SCREEN_WIDTH - 50, 0, 50, kBOTTOMVIEW_HEIGHT)];
+        [_functionButton setFrame:CGRectMake(kScreenWidth - 50, 0, 50, kBOTTOMVIEW_HEIGHT)];
         [_functionButton addTarget:self action:@selector(fuctionAction:) forControlEvents:UIControlEventTouchUpInside];
     }
     return _functionButton;
@@ -255,7 +254,7 @@ MBActionSheetDelegate
 - (MBActionSheetView *)sheetView {
     if (!_sheetView)
     {
-        _sheetView = [[MBActionSheetView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _sheetView = [[MBActionSheetView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
         _sheetView.delegate = self;
     }
     return _sheetView;
@@ -508,7 +507,7 @@ MBActionSheetDelegate
         case UIInterfaceOrientationPortrait:{
             NSLog(@"竖立");
             [UIView animateWithDuration:duration animations:^{
-                CGFloat height = SCREEN_WIDTH * 0.747;
+                CGFloat height = kScreenWidth * 0.747;
                 self.videoView.frame = CGRectMake(0, 0, CGRectGetHeight(self.view.frame), CGRectGetWidth(self.view.frame) - 50);
                 self.playerLayer.bounds = CGRectMake(0, 0, CGRectGetHeight(self.view.frame), height);
                 self.playerLayer.position = CGPointMake(self.view.center.y, self.view.center.x);

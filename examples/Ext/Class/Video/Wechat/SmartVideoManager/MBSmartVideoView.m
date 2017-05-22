@@ -8,6 +8,7 @@
 
 #import "MBSmartVideoView.h"
 #import "MBSmartVideoRecorder.h"
+#import "Ext-precompile.h"
 
 typedef NS_ENUM(NSInteger, MBLongPressState) {
     MBLongPressStateIn,
@@ -78,8 +79,8 @@ typedef NS_ENUM(NSInteger, MBLongPressState) {
     if (!_preview)
     {
         CGFloat ratio = 0.74666;//280/375;
-        CGFloat height = ratio * SCREEN_WIDTH;
-        _preview = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - height - 85, SCREEN_WIDTH, height)];
+        CGFloat height = ratio * kScreenWidth;
+        _preview = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - height - 85, kScreenWidth, height)];
         _preview.backgroundColor = [UIColor blackColor];
     }
     return _preview;
@@ -88,7 +89,7 @@ typedef NS_ENUM(NSInteger, MBLongPressState) {
 - (UIView *)controlView {
     if (!_controlView)
     {
-        _controlView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 85, SCREEN_WIDTH, 85)];
+        _controlView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height - 85, kScreenWidth, 85)];
         _controlView.backgroundColor = [UIColor blackColor];
         
         UILongPressGestureRecognizer *longPress = [[UILongPressGestureRecognizer alloc] initWithTarget:self action:@selector(longPress:)];
@@ -107,7 +108,7 @@ typedef NS_ENUM(NSInteger, MBLongPressState) {
 - (UIView *)processView {
     if (!_processView)
     {
-        _processView = [[UIView alloc] initWithFrame:CGRectMake(0, _preview.frame.size.height + _preview.frame.origin.y - 3, SCREEN_WIDTH, 3)];
+        _processView = [[UIView alloc] initWithFrame:CGRectMake(0, _preview.frame.size.height + _preview.frame.origin.y - 3, kScreenWidth, 3)];
         _processView.layer.backgroundColor = [UIColor orangeColor].CGColor;//[UIColor colorWithHexString:@"#ff511c"].CGColor;
     }
     return _processView;

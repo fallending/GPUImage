@@ -7,15 +7,10 @@
 //
 
 #import "DownLoadManager.h"
-#import <Qiniu/QiniuSDK.h>
-#import <AFNetworking/AFNetworking.h>
-@implementation DownLoadManager
-//{
-//    NSURLSessionDownloadTask *_downloadTask;
-//    AFURLSessionManager *_manager;
-//}
+#import "AFNetworking.h"
+#import "QiniuSDK.h"
 
- 
+@implementation DownLoadManager
 
 + (void)qnFileUploadWithPath:(NSString *)path result:(resultBlock)block {
     QNUploadManager *uploadManager = [[QNUploadManager alloc] init];

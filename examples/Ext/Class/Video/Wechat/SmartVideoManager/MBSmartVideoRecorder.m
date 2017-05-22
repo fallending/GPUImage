@@ -9,6 +9,7 @@
 #import "MBSmartVideoRecorder.h"
 #import "MBSmartVideoWriter.h"
 #import "MBSmartVideoConverter.h"
+#import "Ext-precompile.h"
 
 typedef NS_ENUM(NSInteger, CaptureAVSetupResult) {
     CaptureAVSetupResultDefault,

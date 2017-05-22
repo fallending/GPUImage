@@ -14,8 +14,10 @@
 #import "GPUImageSketchFilter.h"
 #import "GPUImageBeautifyFilter.h"
 #import <AssetsLibrary/ALAssetsLibrary.h>
-
+#import "Ext-precompile.h"
 #import "UIImage+Category.h"
+
+#define kWeakSelf( self ) __weak typeof(self) weakSelf = self
 
 typedef enum : NSUInteger {
     FaceCameraFilterNone,
@@ -90,7 +92,7 @@ WXSmartVideoDelegate
         [_invertBtn setTitle:@"后置" forState:UIControlStateSelected];
         [_invertBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_invertBtn addTarget:self action:@selector(InvertShot:) forControlEvents:UIControlEventTouchUpInside];
-        _invertBtn.frame = CGRectMake(SCREEN_WIDTH - 60, 10, 50, 50);
+        _invertBtn.frame = CGRectMake(kScreenWidth - 60, 10, 50, 50);
         
         CALayer *layer = [[CALayer alloc] init];
         layer.frame = _invertBtn.bounds;
@@ -109,7 +111,7 @@ WXSmartVideoDelegate
         [_selfieBtn setTitle:@"正常模式" forState:UIControlStateSelected];
         [_selfieBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_selfieBtn addTarget:self action:@selector(selfieAction:) forControlEvents:UIControlEventTouchUpInside];
-        _selfieBtn.frame = CGRectMake(SCREEN_WIDTH - 90, 70, 80, 80);
+        _selfieBtn.frame = CGRectMake(kScreenWidth - 90, 70, 80, 80);
         
         CALayer *layer = [[CALayer alloc] init];
         layer.frame = _selfieBtn.bounds;
@@ -129,7 +131,7 @@ WXSmartVideoDelegate
         [_beautifyBtn setTitle:@"无" forState:UIControlStateNormal];
         [_beautifyBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         [_beautifyBtn addTarget:self action:@selector(filter:) forControlEvents:UIControlEventTouchUpInside];
-        _beautifyBtn.frame = CGRectMake(SCREEN_WIDTH - 90, 70, 80, 80);
+        _beautifyBtn.frame = CGRectMake(kScreenWidth - 90, 70, 80, 80);
         _beautifyBtn.tag = 1;
         CALayer *layer = [[CALayer alloc] init];
         layer.frame = _beautifyBtn.bounds;
@@ -143,7 +145,7 @@ WXSmartVideoDelegate
 
 - (WXSmartVideoBottomView *)bottomView {
     if (!_bottomView) {
-        _bottomView = [[WXSmartVideoBottomView alloc] initWithFrame:CGRectMake(0,SCREEN_HEIGHT - 180, SCREEN_WIDTH, 300)];
+        _bottomView = [[WXSmartVideoBottomView alloc] initWithFrame:CGRectMake(0,kScreenHeight - 180, kScreenWidth, 300)];
         _bottomView.backgroundColor = [UIColor clearColor];
         _bottomView.delegate = self;
         _bottomView.duration = kMAXDURATION;
@@ -157,7 +159,7 @@ WXSmartVideoDelegate
 
 - (UIView *)preview {
     if (!_preview) {
-        _preview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        _preview = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
         _preview.backgroundColor = [UIColor purpleColor];
         
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapPreview:)];
@@ -400,7 +402,7 @@ WXSmartVideoDelegate
         _savingImg = NO;
         return;
     }
-    kWeakSelf(self)
+
     [self.recorder.imageDataOutput captureStillImageAsynchronouslyFromConnection:conntion
                                                       completionHandler:^(CMSampleBufferRef imageDataSampleBuffer, NSError *error) {
                                                           if (imageDataSampleBuffer == nil) {
@@ -408,7 +410,7 @@ WXSmartVideoDelegate
                                                           }
                                                           NSData *imageData = [AVCaptureStillImageOutput jpegStillImageNSDataRepresentation:imageDataSampleBuffer];
                                                           UIImage *img = [UIImage imageWithData:imageData];
-                                                          [weakSelf previewPhoto:img];
+                                                          [self previewPhoto:img];
                                                       }];
 }
 
@@ -454,13 +456,11 @@ WXSmartVideoDelegate
 
 - (void)writerCurrentFrameToLibrary {
     _savingImg = YES;
-    kWeakSelf(self)
+    kWeakSelf(self);
+
 
     if (_tempFilter) {
         #warning 这是第二个坑，用这种方式保存照片到相册正常，官方demo种的相片保存会90度旋转
-        //            ALAssetsLibrary *library = [[ALAssetsLibrary alloc] init];
-        //            [library writeImageDataToSavedPhotosAlbum:processedJPEG metadata:self.camera.currentCaptureMetadata completionBlock:^(NSURL *assetURL, NSError *error2) {
-        //            }];
         [self.camera capturePhotoAsJPEGProcessedUpToFilter:_tempFilter withCompletionHandler:^(NSData *processedJPEG, NSError *error){
             UIImage *img = [UIImage imageWithData:processedJPEG];
             [weakSelf saveImageWriteToPhotosAlbum:img];

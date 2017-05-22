@@ -7,6 +7,7 @@
 //
 
 #import "WXSmartVideoControlView.h"
+#import "Ext-precompile.h"
 
 @implementation WXSmartVideoControlView{
     UIView *_outerView;

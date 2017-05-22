@@ -6,7 +6,7 @@
 //  Copyright © 2017年 Nxin. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "Ext-precompile.h"
 
 @interface MBSmartVideoConverter : NSObject
 

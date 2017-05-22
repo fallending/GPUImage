@@ -6,6 +6,8 @@
 //  Copyright (c) 2014年 taobao. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <CoreVideo/CoreVideo.h>
 #import "GPUImageMovieWriterEx.h"
 
 @interface GPUImageMovieWriterEx()
@@ -50,11 +52,11 @@
 - (void)pauseRecording
 {
     if (!self.assetWriter) {
-        DLog(@"assetWriter unavailable to stop");
+        NSLog(@"assetWriter unavailable to stop");
         return;
     }
     
-    DLog(@"pausing video capture");
+    NSLog(@"pausing video capture");
     _flags.isPaused = YES;
     _flags.interrupted = YES;
 }
@@ -62,11 +64,11 @@
 - (void)resumeRecording
 {
     if (!self.assetWriter) {
-        DLog(@"assetWriter unavailable to resume");
+        NSLog(@"assetWriter unavailable to resume");
         return;
     }
     
-    DLog(@"resuming video capture");
+    NSLog(@"resuming video capture");
     _flags.isPaused = NO;
 }
 
@@ -75,12 +77,12 @@
         return;
     
     if (!self.assetWriter) {
-        DLog(@"assetWriter unavailable to end");
+        NSLog(@"assetWriter unavailable to end");
         return;
     }
     
     if (self.assetWriter.status == AVAssetWriterStatusUnknown) {
-        DLog(@"asset writer is in an unknown state, wasn't recording");
+        NSLog(@"asset writer is in an unknown state, wasn't recording");
         return;
     }
     
@@ -91,7 +93,7 @@
 
 - (void)processAudioBuffer:(CMSampleBufferRef)audioBuffer{
     if (!CMSampleBufferDataIsReady(audioBuffer)) {
-        DLog(@"sample buffer data is not ready");
+        NSLog(@"sample buffer data is not ready");
         //CFRelease(audioBuffer);
         return;
     }
@@ -114,9 +116,9 @@
             
             CMTime offset = CMTimeSubtract(pTimestamp, _audioTimestamp);
             _timeOffset = (_timeOffset.value == 0) ? offset : CMTimeAdd(_timeOffset, offset);
-            DLog(@"new calculated offset %f valid (%d)", CMTimeGetSeconds(_timeOffset), CMTIME_IS_VALID(_timeOffset));
+            NSLog(@"new calculated offset %f valid (%d)", CMTimeGetSeconds(_timeOffset), CMTIME_IS_VALID(_timeOffset));
         } else {
-            DLog(@"invalid audio timestamp, no offset update");
+            NSLog(@"invalid audio timestamp, no offset update");
         }
         
         _audioTimestamp.flags = 0;
@@ -127,7 +129,7 @@
     if (_timeOffset.value > 0) {
         bufferToWrite = [self _createOffsetSampleBuffer:audioBuffer withTimeOffset:_timeOffset];
         if (!bufferToWrite) {
-            DLog(@"error subtracting the timeoffset from the sampleBuffer");
+            NSLog(@"error subtracting the timeoffset from the sampleBuffer");
         }
     } else {
         bufferToWrite = audioBuffer;
@@ -181,13 +183,13 @@
     
     OSStatus status = CMSampleBufferGetSampleTimingInfoArray(sampleBuffer, 0, NULL, &itemCount);
     if (status) {
-        DLog(@"couldn't determine the timing info count");
+        NSLog(@"couldn't determine the timing info count");
         return NULL;
     }
     
     CMSampleTimingInfo *timingInfo = (CMSampleTimingInfo *)malloc(sizeof(CMSampleTimingInfo) * (unsigned long)itemCount);
     if (!timingInfo) {
-        DLog(@"couldn't allocate timing info");
+        NSLog(@"couldn't allocate timing info");
         return NULL;
     }
     
@@ -195,7 +197,7 @@
     if (status) {
         free(timingInfo);
         timingInfo = NULL;
-        DLog(@"failure getting sample timing info array");
+        NSLog(@"failure getting sample timing info array");
         return NULL;
     }
     

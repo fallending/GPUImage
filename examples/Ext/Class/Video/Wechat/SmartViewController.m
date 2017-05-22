@@ -13,6 +13,7 @@
 #import "HUBProcessView.h"
 #import "WXSmartVideoView.h"
 #import "WXVideoPreviewViewController.h"
+#import "Ext-precompile.h"
 
 //#import "UIImageView+Category.h"
 #import "UIImage+Category.h"
@@ -41,34 +42,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     self.edgesForExtendedLayout = NO;
+    
     _isUploadFile = YES;
+    
     [self.view addSubview:self.progressView];
-    
-    
-//    self.tempView = [[UIView alloc] initWithFrame:CGRectMake(0, 200, CGRectGetWidth(self.view.frame), 300)];
-//    [self.view addSubview:self.tempView];
-//    self.tempView.backgroundColor = [UIColor brownColor];
-    
-//    UIImage *img = [UIImage imageNamed:@"video_right"];
-//    UIImageView *imgView = [[UIImageView alloc] initWithImage:img];
-//    imgView.frame = CGRectMake(100, 300, 100, 100);
-//    imgView.layer.transform = CATransform3DMakeRotation(M_PI, 0, 1, 0);
-//    [self.view addSubview:imgView];
-//    
-//    UIImageView *imgViewB = [[UIImageView alloc] initWithImage:imgView.image];
-//    imgViewB.frame = CGRectMake(100, 100, 100, 100);
-//    [self.view addSubview:imgViewB];
-//    
-//    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
-//        dispatch_async(dispatch_get_main_queue(), ^{
-//            UIGraphicsBeginImageContext(imgView.size);
-//            [imgView.layer renderInContext:UIGraphicsGetCurrentContext()];
-//            UIImage *tempImg = UIGraphicsGetImageFromCurrentImageContext();
-//            UIImageWriteToSavedPhotosAlbum([UIImage fixOrientation:tempImg], self, @selector(image:didFinishSavingWithError:contextInfo:), nil);
-//        }); 
-//    });
 }
 
 - (void)didReceiveMemoryWarning {
@@ -113,7 +92,7 @@
     UIInterfaceOrientation currentOrient = [UIApplication  sharedApplication].statusBarOrientation;
     NSLog(@"currentOrient == %ld", (long)currentOrient);
     if (![self isSimulator]) {
-        MBSmartVideoView *smart = [[MBSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT)];
+        MBSmartVideoView *smart = [[MBSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
         NSLog(@".frame == %@", NSStringFromCGRect(smart.frame));
         [self.navigationController.view addSubview:smart];
         __weak __typeof(&*self)weakSelf = self;
@@ -129,7 +108,7 @@
 - (IBAction)wxSmartVideo:(UIButton *)sender {
     if (![self isSimulator]) {
         NSLog(@"小视频全屏录制");
-        WXSmartVideoView *wxsmartView = [[WXSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) GPUImage:NO];
+        WXSmartVideoView *wxsmartView = [[WXSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) GPUImage:NO];
 //        wxsmartView.finishedRecordBlock = ^(NSDictionary *dic) {
 //            NSLog(@"录制完成 %@", [dic objectForKey:@"videoURL"]);
 //            self.videoUrll = [[dic objectForKey:@"videoURL"] description];
@@ -141,17 +120,11 @@
 }
 
 - (IBAction)playVideo:(UIButton *)sender {
-    if (self.videoUrll.length >0)
-    {
+    if (self.videoUrll.length > 0) {
         [[UIApplication sharedApplication] setStatusBarOrientation:UIInterfaceOrientationPortrait animated:NO];
         MBPlaySmartVideoViewController *playVC =[[MBPlaySmartVideoViewController alloc] init];
         playVC.videoUrlString = self.videoUrll;
         [self.navigationController pushViewController:playVC animated:YES];
-        
-        NSLog(@"videoUrll == %@", self.videoUrll);
-//        WXVideoPreviewViewController *vc = [[WXVideoPreviewViewController alloc] init];
-//        vc.url = self.videoUrll;
-//        [self.navigationController pushViewController:vc animated:YES];
     }
 }
 
@@ -181,7 +154,7 @@
 - (IBAction)GPUImageCapture:(UIButton *)sender {
     if (![self isSimulator]) {
         NSLog(@"小视频全屏录制");
-        WXSmartVideoView *wxsmartView = [[WXSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, SCREEN_WIDTH, SCREEN_HEIGHT) GPUImage:YES];
+        WXSmartVideoView *wxsmartView = [[WXSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) GPUImage:YES];
         [self.navigationController.view addSubview:wxsmartView];
     }else {
         NSLog(@"模拟器不支持小视频录制");

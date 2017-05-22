@@ -8,6 +8,8 @@
 
 #import "WXSmartVideoBottomView.h"
 #import "WXSmartVideoControlView.h"
+#import "Ext-precompile.h"
+
 @interface WXSmartVideoBottomView()<
 SmartVideoControlDelegate
 >
@@ -33,7 +35,7 @@ SmartVideoControlDelegate
         _backBtn = [UIButton buttonWithType:UIButtonTypeCustom];
         [_backBtn setImage:[UIImage imageNamed:@"arrow_white_left"] forState:UIControlStateNormal];
         _backBtn.frame = CGRectMake(0, 0, 50, 50);
-        _backBtn.center = CGPointMake(SCREEN_WIDTH/5, _controlView.centerY);
+        _backBtn.center = CGPointMake(kScreenWidth/5, _controlView.centerY);
         [_backBtn addTarget:self action:@selector(backAction:) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:_backBtn];
         

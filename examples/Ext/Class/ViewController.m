@@ -13,6 +13,7 @@
 #import "OEPopVideoController.h"
 #import "Ext-precompile.h"
 #import "Ext-Swift.h"
+#import "SmartViewController.h"
 
 @interface ViewController ()<HCPhotoEditViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, OEPopVideoControllerDelegate>
 
@@ -41,6 +42,12 @@
     videoController.videoMaxTime = 4;
     videoController.delegate = self;
     [videoController presentPopupControllerAnimated:YES];
+}
+
+- (IBAction)onWechat:(id)sender {
+    SmartViewController *viewController = [[SmartViewController alloc] init];
+    
+    [self.navigationController pushViewController:viewController animated:YES];
 }
 
 #pragma mark - UIImagePickerController Delegate

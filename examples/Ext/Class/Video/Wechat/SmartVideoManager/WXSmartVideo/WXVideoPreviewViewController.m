@@ -8,6 +8,8 @@
 
 #import "WXVideoPreviewViewController.h"
 #import "VideoPlayerView.h"
+#import "Ext-precompile.h"
+
 @interface WXVideoPreviewViewController ()<
 VideoPlayerViewDelegate
 >
@@ -53,7 +55,7 @@ VideoPlayerViewDelegate
     UIButton *confirmBtn = [UIButton buttonWithType:UIButtonTypeCustom];
     [confirmBtn setImage:[UIImage imageNamed:@"video_right"] forState:UIControlStateNormal];
     confirmBtn.frame = CGRectMake(0, 0, 80, 80);
-    confirmBtn.center = CGPointMake(SCREEN_WIDTH/2, SCREEN_HEIGHT - 80);
+    confirmBtn.center = CGPointMake(kScreenWidth/2, kScreenHeight - 80);
     confirmBtn.layer.cornerRadius = confirmBtn.width / 2;
     [confirmBtn addTarget:self action:@selector(clickAction:) forControlEvents:UIControlEventTouchUpInside];
     confirmBtn.tag = 2;
@@ -68,8 +70,8 @@ VideoPlayerViewDelegate
     [self.view addSubview:backBtn];
     
     [UIView animateWithDuration:0.1 animations:^{
-        backBtn.left = SCREEN_WIDTH *0.093;
-        confirmBtn.right = SCREEN_WIDTH - SCREEN_WIDTH *0.093;
+        backBtn.left = kScreenWidth *0.093;
+        confirmBtn.right = kScreenWidth - kScreenWidth *0.093;
     }];
 
 }

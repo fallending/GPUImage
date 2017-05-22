@@ -27,7 +27,7 @@
         _playerLayer.frame = self.bounds;
         [self.layer addSublayer:_playerLayer];
         
-        if (kSYSTEM_VERSION_iOS10Later) _player.automaticallyWaitsToMinimizeStalling = NO;
+//        if (kSYSTEM_VERSION_iOS10Later) _player.automaticallyWaitsToMinimizeStalling = NO;
         [self noticeAndKVO];
     }
     return self;

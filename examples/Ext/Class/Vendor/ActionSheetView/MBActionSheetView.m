@@ -7,10 +7,8 @@
 //
 
 #import "MBActionSheetView.h"
+#import "Ext-precompile.h"
 
-#define SCREEN_HEIGHT  [UIScreen mainScreen].bounds.size.height
-#define SCREEN_WIDTH   [UIScreen mainScreen].bounds.size.width
-#define RGBColor(r,g,b) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:1.0f]
 @interface MBActionSheetView()
 
 @property (nonatomic, strong) UIView *backgroundView;
@@ -97,7 +95,7 @@
     CGFloat interval = 5;
     CGFloat actionSheetHeight = height * (self.dataArray.count + 1) +interval;
     
-    self.actionSheetView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height, SCREEN_WIDTH, actionSheetHeight)];
+    self.actionSheetView = [[UIView alloc] initWithFrame:CGRectMake(0, self.frame.size.height, kScreenWidth, actionSheetHeight)];
     [self addSubview:self.actionSheetView];
     
     UIToolbar *toolbar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, 0, self.actionSheetView.frame.size.width, self.actionSheetView.frame.size.height)];
@@ -107,16 +105,16 @@
     ActionSheetButton *cancelBtn = [ActionSheetButton buttonWithType:UIButtonTypeCustom];
     [cancelBtn setTitle:@"取消" forState:UIControlStateNormal];
     [cancelBtn setBackgroundImage:[UIColor clearColor].image forState:UIControlStateNormal];
-    [cancelBtn setBackgroundImage:RGBColor(175, 175, 175).image forState:UIControlStateHighlighted];
-    [cancelBtn setTitleColor:RGBColor(51, 51, 51) forState:UIControlStateNormal];
+    [cancelBtn setBackgroundImage:color_with_rgb(175, 175, 175).image forState:UIControlStateHighlighted];
+    [cancelBtn setTitleColor:color_with_rgb(51, 51, 51) forState:UIControlStateNormal];
     [cancelBtn.titleLabel setFont:[UIFont systemFontOfSize:18]];
     [cancelBtn setTag:666];
-    [cancelBtn setFrame:CGRectMake(0, actionSheetHeight - height, SCREEN_WIDTH, height)];
+    [cancelBtn setFrame:CGRectMake(0, actionSheetHeight - height, kScreenWidth, height)];
     [cancelBtn addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
     [self.actionSheetView addSubview:cancelBtn];
     
     UIView *intervalView = [[UIView alloc] initWithFrame:CGRectMake(0, cancelBtn.frame.origin.y - interval, self.frame.size.width, interval)];
-    intervalView.backgroundColor = RGBColor(114, 114, 114);
+    intervalView.backgroundColor = color_with_rgb(114, 114, 114);
     intervalView.alpha = 0.3f;
     [self.actionSheetView addSubview:intervalView];
     
@@ -124,16 +122,16 @@
     {
         ActionSheetButton * button = [ActionSheetButton buttonWithType:UIButtonTypeCustom];
         button.model = [self.dataArray objectAtIndex:i];
-        button.frame = CGRectMake(0,i * height, SCREEN_WIDTH, height);
+        button.frame = CGRectMake(0,i * height, kScreenWidth, height);
         [button setBackgroundImage:[UIColor clearColor].image forState:UIControlStateNormal];
-        [button setTitleColor:RGBColor(51, 51, 51) forState:UIControlStateNormal];
-        [button setBackgroundImage:RGBColor(175, 175, 175).image forState:UIControlStateHighlighted];
+        [button setTitleColor:color_with_rgb(51, 51, 51) forState:UIControlStateNormal];
+        [button setBackgroundImage:color_with_rgb(175, 175, 175).image forState:UIControlStateHighlighted];
         [button.titleLabel setFont:[UIFont systemFontOfSize:18]];
         [button addTarget:self action:@selector(clickItem:) forControlEvents:UIControlEventTouchUpInside];
         [self.actionSheetView addSubview:button];
         
-        UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, button.frame.size.height - 0.5, SCREEN_WIDTH, 0.5)];
-        bottomLine.backgroundColor = RGBColor(155, 155, 155);
+        UIView *bottomLine = [[UIView alloc] initWithFrame:CGRectMake(0, button.frame.size.height - 0.5, kScreenWidth, 0.5)];
+        bottomLine.backgroundColor = color_with_rgb(155, 155, 155);
         [button addSubview:bottomLine];
     }
     

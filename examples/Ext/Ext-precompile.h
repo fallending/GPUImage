@@ -6,6 +6,13 @@
 //  Copyright © 2017 chenhao. All rights reserved.
 //
 
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <CoreMedia/CoreMedia.h>
+#import <AVFoundation/AVFoundation.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#import <AssetsLibrary/AssetsLibrary.h>
+
 #import "GPUImage.h"
 #import "MBProgressHUD.h"
 #import "NSString+date.h"
@@ -19,6 +26,10 @@
 #import "TBSexyFilter.h" //性感
 #import "TBAmatorkaFilter.h"
 #import "TBSoftEleganceFilter.h"
+
+#import "UIColor+Category.h"
+#import "UIImage+Category.h"
+#import "UIView+Category.h"
 
 #pragma mark - Delete Files/Directory
 static inline void deleteFilesAt(NSString *directory, NSString *suffixName)
