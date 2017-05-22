@@ -8,6 +8,8 @@
 
 #import "AppDelegate.h"
 
+extern CFAbsoluteTime StartTime;
+
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,11 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Lauched in %f seconds.", (CFAbsoluteTimeGetCurrent() - StartTime));
+    });
+    
     return YES;
 }
 

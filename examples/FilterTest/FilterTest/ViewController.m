@@ -22,23 +22,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
     self.videoCamera = [[GPUImageVideoCamera alloc] initWithSessionPreset:AVCaptureSessionPreset640x480 cameraPosition:AVCaptureDevicePositionFront];
     self.videoCamera.outputImageOrientation = UIInterfaceOrientationPortrait;
     self.videoCamera.horizontallyMirrorFrontFacingCamera = YES;
+    
     self.filterView = [[GPUImageView alloc] initWithFrame:self.view.frame];
     self.filterView.center = self.view.center;
-    
     [self.view addSubview:self.filterView];
+    
     [self.videoCamera addTarget:self.filterView];
     [self.videoCamera startCameraCapture];
     
     self.beautifyButton = [UIButton buttonWithType:UIButtonTypeCustom];
     self.beautifyButton.frame = CGRectMake(0, KScreenHeight - 40, KScreenWidth, 40);
     self.beautifyButton.backgroundColor = [UIColor whiteColor];
+    
     [self.beautifyButton setTitle:@"开启" forState:UIControlStateNormal];
     [self.beautifyButton setTitle:@"关闭" forState:UIControlStateSelected];
     [self.beautifyButton setTitleColor:[UIColor blueColor] forState:UIControlStateNormal];
     [self.beautifyButton addTarget:self action:@selector(beautify) forControlEvents:UIControlEventTouchUpInside];
+    
     [self.view addSubview:self.beautifyButton];
 
 }

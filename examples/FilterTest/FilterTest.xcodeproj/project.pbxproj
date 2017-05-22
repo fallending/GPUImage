@@ -7,42 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		6A4E2C441ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2C411ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.m */; };
-		6A4E2C451ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6A4E2C431ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.m */; };
+		6AB4A5FC1ED2C54F00599CDE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5E71ED2C54E00599CDE /* AppDelegate.m */; };
+		6AB4A5FD1ED2C54F00599CDE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4A5E81ED2C54E00599CDE /* Assets.xcassets */; };
+		6AB4A5FE1ED2C54F00599CDE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4A5E91ED2C54F00599CDE /* LaunchScreen.storyboard */; };
+		6AB4A5FF1ED2C54F00599CDE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4A5EB1ED2C54F00599CDE /* Main.storyboard */; };
+		6AB4A6001ED2C54F00599CDE /* BeautifyFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5EE1ED2C54F00599CDE /* BeautifyFace.xcdatamodeld */; };
+		6AB4A6011ED2C54F00599CDE /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5F11ED2C54F00599CDE /* GPUImageBeautifyFilter.m */; };
+		6AB4A6021ED2C54F00599CDE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6AB4A5F21ED2C54F00599CDE /* Info.plist */; };
+		6AB4A6031ED2C54F00599CDE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5F31ED2C54F00599CDE /* main.m */; };
+		6AB4A6041ED2C54F00599CDE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5F51ED2C54F00599CDE /* ViewController.m */; };
+		6AB4A6051ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5F91ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.m */; };
+		6AB4A6061ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AB4A5FB1ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.m */; };
 		9A858AAAE483C327EE0BB3EC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D2570ECF0752D6FAEE0DA84 /* libPods.a */; };
-		D31841DC1CED95AD007C903F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D31841DB1CED95AD007C903F /* main.m */; };
-		D31841DF1CED95AD007C903F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D31841DE1CED95AD007C903F /* AppDelegate.m */; };
-		D31841E21CED95AD007C903F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D31841E11CED95AD007C903F /* ViewController.m */; };
-		D31841E51CED95AD007C903F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31841E31CED95AD007C903F /* Main.storyboard */; };
-		D31841E81CED95AD007C903F /* BeautifyFace.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D31841E61CED95AD007C903F /* BeautifyFace.xcdatamodeld */; };
-		D31841EA1CED95AD007C903F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D31841E91CED95AD007C903F /* Assets.xcassets */; };
-		D31841ED1CED95AD007C903F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D31841EB1CED95AD007C903F /* LaunchScreen.storyboard */; };
-		D31841FA1CEDA8D4007C903F /* GPUImageBeautifyFilter.m in Sources */ = {isa = PBXBuildFile; fileRef = D31841F91CEDA8D4007C903F /* GPUImageBeautifyFilter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		2CC204E592BD1396A0D75574 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		2D2570ECF0752D6FAEE0DA84 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		6A4E2C3F1ECD92210030D0A7 /* YUGPUImageDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageDefines.h; sourceTree = "<group>"; };
-		6A4E2C401ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageHighPassSkinSmoothingFilter.h; sourceTree = "<group>"; };
-		6A4E2C411ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGPUImageHighPassSkinSmoothingFilter.m; sourceTree = "<group>"; };
-		6A4E2C421ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageStillImageHighPassFilter.h; sourceTree = "<group>"; };
-		6A4E2C431ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGPUImageStillImageHighPassFilter.m; sourceTree = "<group>"; };
+		6AB4A5E61ED2C54E00599CDE /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		6AB4A5E71ED2C54E00599CDE /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		6AB4A5E81ED2C54E00599CDE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		6AB4A5EA1ED2C54F00599CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		6AB4A5EC1ED2C54F00599CDE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		6AB4A5ED1ED2C54F00599CDE /* FilterTest.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FilterTest.pch; sourceTree = "<group>"; };
+		6AB4A5EF1ED2C54F00599CDE /* BeautifyFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeautifyFace.xcdatamodel; sourceTree = "<group>"; };
+		6AB4A5F01ED2C54F00599CDE /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
+		6AB4A5F11ED2C54F00599CDE /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
+		6AB4A5F21ED2C54F00599CDE /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AB4A5F31ED2C54F00599CDE /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		6AB4A5F41ED2C54F00599CDE /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		6AB4A5F51ED2C54F00599CDE /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		6AB4A5F71ED2C54F00599CDE /* YUGPUImageDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageDefines.h; sourceTree = "<group>"; };
+		6AB4A5F81ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageHighPassSkinSmoothingFilter.h; sourceTree = "<group>"; };
+		6AB4A5F91ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGPUImageHighPassSkinSmoothingFilter.m; sourceTree = "<group>"; };
+		6AB4A5FA1ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YUGPUImageStillImageHighPassFilter.h; sourceTree = "<group>"; };
+		6AB4A5FB1ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YUGPUImageStillImageHighPassFilter.m; sourceTree = "<group>"; };
 		6F22256F2F3CAD9DBDEA7CEC /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		D31841D71CED95AD007C903F /* FilterTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilterTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		D31841DB1CED95AD007C903F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		D31841DD1CED95AD007C903F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		D31841DE1CED95AD007C903F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		D31841E01CED95AD007C903F /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		D31841E11CED95AD007C903F /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		D31841E41CED95AD007C903F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		D31841E71CED95AD007C903F /* BeautifyFace.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BeautifyFace.xcdatamodel; sourceTree = "<group>"; };
-		D31841E91CED95AD007C903F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		D31841EC1CED95AD007C903F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		D31841EE1CED95AD007C903F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D31841F41CED9692007C903F /* BeautifyFace.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BeautifyFace.pch; sourceTree = "<group>"; };
-		D31841F81CEDA8D4007C903F /* GPUImageBeautifyFilter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GPUImageBeautifyFilter.h; sourceTree = "<group>"; };
-		D31841F91CEDA8D4007C903F /* GPUImageBeautifyFilter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GPUImageBeautifyFilter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,14 +58,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		6A4E2C3E1ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothing */ = {
+		6AB4A5E51ED2C54E00599CDE /* FilterTest */ = {
 			isa = PBXGroup;
 			children = (
-				6A4E2C3F1ECD92210030D0A7 /* YUGPUImageDefines.h */,
-				6A4E2C401ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.h */,
-				6A4E2C411ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.m */,
-				6A4E2C421ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.h */,
-				6A4E2C431ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.m */,
+				6AB4A5E61ED2C54E00599CDE /* AppDelegate.h */,
+				6AB4A5E71ED2C54E00599CDE /* AppDelegate.m */,
+				6AB4A5E81ED2C54E00599CDE /* Assets.xcassets */,
+				6AB4A5E91ED2C54F00599CDE /* LaunchScreen.storyboard */,
+				6AB4A5EB1ED2C54F00599CDE /* Main.storyboard */,
+				6AB4A5ED1ED2C54F00599CDE /* FilterTest.pch */,
+				6AB4A5EE1ED2C54F00599CDE /* BeautifyFace.xcdatamodeld */,
+				6AB4A5F01ED2C54F00599CDE /* GPUImageBeautifyFilter.h */,
+				6AB4A5F11ED2C54F00599CDE /* GPUImageBeautifyFilter.m */,
+				6AB4A5F21ED2C54F00599CDE /* Info.plist */,
+				6AB4A5F31ED2C54F00599CDE /* main.m */,
+				6AB4A5F41ED2C54F00599CDE /* ViewController.h */,
+				6AB4A5F51ED2C54F00599CDE /* ViewController.m */,
+				6AB4A5F61ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothing */,
+			);
+			path = FilterTest;
+			sourceTree = "<group>";
+		};
+		6AB4A5F61ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothing */ = {
+			isa = PBXGroup;
+			children = (
+				6AB4A5F71ED2C54F00599CDE /* YUGPUImageDefines.h */,
+				6AB4A5F81ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.h */,
+				6AB4A5F91ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.m */,
+				6AB4A5FA1ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.h */,
+				6AB4A5FB1ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.m */,
 			);
 			path = YUGPUImageHighPassSkinSmoothing;
 			sourceTree = "<group>";
@@ -89,7 +111,7 @@
 		D31841CE1CED95AD007C903F = {
 			isa = PBXGroup;
 			children = (
-				D31841D91CED95AD007C903F /* BeautifyFace */,
+				6AB4A5E51ED2C54E00599CDE /* FilterTest */,
 				D31841D81CED95AD007C903F /* Products */,
 				9FBCCB7C21C4AADD1258CBC9 /* Pods */,
 				D08B87B087F55D86833881B8 /* Frameworks */,
@@ -102,35 +124,6 @@
 				D31841D71CED95AD007C903F /* FilterTest.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		D31841D91CED95AD007C903F /* BeautifyFace */ = {
-			isa = PBXGroup;
-			children = (
-				6A4E2C3E1ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothing */,
-				D31841F41CED9692007C903F /* BeautifyFace.pch */,
-				D31841DD1CED95AD007C903F /* AppDelegate.h */,
-				D31841DE1CED95AD007C903F /* AppDelegate.m */,
-				D31841E01CED95AD007C903F /* ViewController.h */,
-				D31841E11CED95AD007C903F /* ViewController.m */,
-				D31841F81CEDA8D4007C903F /* GPUImageBeautifyFilter.h */,
-				D31841F91CEDA8D4007C903F /* GPUImageBeautifyFilter.m */,
-				D31841E31CED95AD007C903F /* Main.storyboard */,
-				D31841E91CED95AD007C903F /* Assets.xcassets */,
-				D31841EB1CED95AD007C903F /* LaunchScreen.storyboard */,
-				D31841EE1CED95AD007C903F /* Info.plist */,
-				D31841E61CED95AD007C903F /* BeautifyFace.xcdatamodeld */,
-				D31841DA1CED95AD007C903F /* Supporting Files */,
-			);
-			path = BeautifyFace;
-			sourceTree = "<group>";
-		};
-		D31841DA1CED95AD007C903F /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D31841DB1CED95AD007C903F /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,9 +187,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31841ED1CED95AD007C903F /* LaunchScreen.storyboard in Resources */,
-				D31841EA1CED95AD007C903F /* Assets.xcassets in Resources */,
-				D31841E51CED95AD007C903F /* Main.storyboard in Resources */,
+				6AB4A6021ED2C54F00599CDE /* Info.plist in Resources */,
+				6AB4A5FF1ED2C54F00599CDE /* Main.storyboard in Resources */,
+				6AB4A5FD1ED2C54F00599CDE /* Assets.xcassets in Resources */,
+				6AB4A5FE1ED2C54F00599CDE /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -255,33 +249,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31841E21CED95AD007C903F /* ViewController.m in Sources */,
-				D31841E81CED95AD007C903F /* BeautifyFace.xcdatamodeld in Sources */,
-				D31841DF1CED95AD007C903F /* AppDelegate.m in Sources */,
-				D31841FA1CEDA8D4007C903F /* GPUImageBeautifyFilter.m in Sources */,
-				6A4E2C451ECD92210030D0A7 /* YUGPUImageStillImageHighPassFilter.m in Sources */,
-				D31841DC1CED95AD007C903F /* main.m in Sources */,
-				6A4E2C441ECD92210030D0A7 /* YUGPUImageHighPassSkinSmoothingFilter.m in Sources */,
+				6AB4A6011ED2C54F00599CDE /* GPUImageBeautifyFilter.m in Sources */,
+				6AB4A5FC1ED2C54F00599CDE /* AppDelegate.m in Sources */,
+				6AB4A6031ED2C54F00599CDE /* main.m in Sources */,
+				6AB4A6001ED2C54F00599CDE /* BeautifyFace.xcdatamodeld in Sources */,
+				6AB4A6061ED2C54F00599CDE /* YUGPUImageStillImageHighPassFilter.m in Sources */,
+				6AB4A6041ED2C54F00599CDE /* ViewController.m in Sources */,
+				6AB4A6051ED2C54F00599CDE /* YUGPUImageHighPassSkinSmoothingFilter.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		D31841E31CED95AD007C903F /* Main.storyboard */ = {
+		6AB4A5E91ED2C54F00599CDE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				D31841E41CED95AD007C903F /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		D31841EB1CED95AD007C903F /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D31841EC1CED95AD007C903F /* Base */,
+				6AB4A5EA1ED2C54F00599CDE /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		6AB4A5EB1ED2C54F00599CDE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6AB4A5EC1ED2C54F00599CDE /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -376,8 +370,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z5P6G49J44;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BeautifyFace/BeautifyFace.pch";
-				INFOPLIST_FILE = BeautifyFace/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FilterTest/FilterTest.pch";
+				INFOPLIST_FILE = FilterTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
@@ -392,8 +386,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = Z5P6G49J44;
-				GCC_PREFIX_HEADER = "$(SRCROOT)/BeautifyFace/BeautifyFace.pch";
-				INFOPLIST_FILE = BeautifyFace/Info.plist;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/FilterTest/FilterTest.pch";
+				INFOPLIST_FILE = FilterTest/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "";
@@ -425,12 +419,12 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		D31841E61CED95AD007C903F /* BeautifyFace.xcdatamodeld */ = {
+		6AB4A5EE1ED2C54F00599CDE /* BeautifyFace.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				D31841E71CED95AD007C903F /* BeautifyFace.xcdatamodel */,
+				6AB4A5EF1ED2C54F00599CDE /* BeautifyFace.xcdatamodel */,
 			);
-			currentVersion = D31841E71CED95AD007C903F /* BeautifyFace.xcdatamodel */;
+			currentVersion = 6AB4A5EF1ED2C54F00599CDE /* BeautifyFace.xcdatamodel */;
 			path = BeautifyFace.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

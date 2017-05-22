@@ -14,6 +14,10 @@
 #import "Ext-precompile.h"
 #import "Ext-Swift.h"
 #import "SmartViewController.h"
+#import "MBPlaySmartVideoViewController.h"
+#import "WXSmartVideoView.h"
+
+extern CFAbsoluteTime StartTime;
 
 @interface ViewController ()<HCPhotoEditViewControllerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, OEPopVideoControllerDelegate>
 
@@ -23,7 +27,16 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+//    self.edgesForExtendedLayout = UIRectEdgeNone;
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    dispatch_async(dispatch_get_main_queue(), ^{
+        NSLog(@"Viewed in %f seconds.", (CFAbsoluteTimeGetCurrent() - StartTime));
+    });
 }
 
 #pragma mark - Action handler
@@ -45,9 +58,12 @@
 }
 
 - (IBAction)onWechat:(id)sender {
-    SmartViewController *viewController = [[SmartViewController alloc] init];
+//    SmartViewController *viewController = [[SmartViewController alloc] init];
+//    
+//    [self.navigationController pushViewController:viewController animated:YES];
     
-    [self.navigationController pushViewController:viewController animated:YES];
+    WXSmartVideoView *wxsmartView = [[WXSmartVideoView alloc] initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight) GPUImage:YES];
+    [self.navigationController.view addSubview:wxsmartView];
 }
 
 #pragma mark - UIImagePickerController Delegate
