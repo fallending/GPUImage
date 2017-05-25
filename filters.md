@@ -1,8 +1,12 @@
 # 滤镜
 
+处理效果是基于GPU的，比使用CPU性能更高
+
 ## [关于开源框架GPUImage 的简单说明](http://blog.csdn.net/lu_ca/article/details/47859955)
 
 ```
+#pragma mark - 色彩处理 Handle Color
+
 #import "GPUImageBrightnessFilter.h"                //亮度
 #import "GPUImageExposureFilter.h"                  //曝光
 #import "GPUImageContrastFilter.h"                  //对比度
@@ -627,3 +631,14 @@ In other words, the path of this application is camera -> sepia tone filter -> c
 A version of my ColorTracking example from http://www.sunsetlakesoftware.com/2010/10/22/gpu-accelerated-video-processing-mac-and-ios ported across to use GPUImage, this application uses color in a scene to track objects from a live camera feed. The four views you can switch between include the raw camera feed, the camera feed with pixels matching the color threshold in white, the processed video where positions are encoded as colors within the pixels passing the threshold test, and finally the live video feed with a dot that tracks the selected color. Tapping the screen changes the color to track to match the color of the pixels under your finger. Tapping and dragging on the screen makes the color threshold more or less forgiving. This is most obvious on the second, color thresholding view.
 
 Currently, all processing for the color averaging in the last step is done on the CPU, so this is part is extremely slow.
+
+### 小知识
+
+1. 控制器sink型输出是什么意思
+  - SOURCE和 SINK说的是输入类型。
+  - 从端口向外电路流出电流称为拉电流（SOURCE CURRENT）；
+  - 从外电路流入端口的电流称为灌电流（SINK CURRENT）；
+  - 即 电流流向输入接口的SINK型输入，电流流出输入接口的叫SOURCE型输入。
+  - 所以一般将filters，分为：source, transform, sink; 插件式滤波器架构，常用于数据流处理
+
+2. 

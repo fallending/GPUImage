@@ -19,7 +19,7 @@
 
 6. [YUCIHighPassSkinSmoothing](https://github.com/YuAo/YUCIHighPassSkinSmoothing)
 
- [滤镜说明]()
+ [滤镜说明](https://github.com/fallending/GPUImage-X/blob/master/filters.md)
 
 ## 理论依据
 
@@ -36,6 +36,14 @@
 
 5. [图像增强-选择式掩膜平滑](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2601570.html)
 6. [图像增强-3](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2601281.html),[图像增强-2](http://www.cnblogs.com/BYTEMAN/archive/2012/07/20/2600625.html),[图像增强处理-1](http://www.cnblogs.com/BYTEMAN/archive/2012/07/18/2597375.html)
+
+7. [一篇通俗易懂的讲解OpenGL ES的文章，opengles](http://www.bkjia.com/IOSjc/1089406.html)
+
+8. [OpenGLES与IOS编程](http://blog.csdn.net/wanglang3081/article/details/9104515)
+
+9. [CAEAGLLayer](http://blog.csdn.net/u013773524/article/details/51385127)
+
+10. [OpenGL ES2.0 – Iphone开发指引](http://www.cnblogs.com/andyque/archive/2011/08/08/2131019.html)
 
 ## 技术需要
 
